@@ -42,7 +42,7 @@ header .container .h_left h1 a {}
 header .container .h_left h1 a img {}
 header .container .h_left nav {}
 header .container .h_left nav ul {
-    display: flex;
+    display:flex; flex-flow:row wrap;
 }
 header .container .h_left nav ul li {padding:0 10px; }
 header .container .h_left nav ul li > a {
@@ -83,20 +83,22 @@ header .container .h_left nav ul li .sub_bg .sub .s_right a img {}
 header .container .h_right {
     display:flex; align-items:center;
 }
+/* m_nav,m_search 데스크탑에서는 숨기기*/
+header .container .h_right .m_nav {
+    display: none;
+}
+header .container .h_right .m_nav span {}
+header .container .h_right .m_search {display:none;}/* m_icon end */
 header .container .h_right #search_frm {
     border: 1px solid #000;
 }
 header .container .h_right #search_frm fieldset {
     display:flex; align-items:center;
 }
-header .container .h_right #search_frm fieldset #search_txt {
-    letter-spacing:-0.02em;
-}
+header .container .h_right #search_frm fieldset #search_txt {letter-spacing:-0.02em;}
 header .container .h_right #search_frm fieldset #search_btn {}
 header .container .h_right #search_frm fieldset #search_btn img {}
-header .container .h_right a {
-    margin-left:10px;
-}
+header .container .h_right a {margin-left:10px;}
 header .container .h_right a img {}
 
 /* footer */

@@ -29,6 +29,7 @@ for(let i of sub){i.addEventListener('mouseout',function(){
 })} 
 
 
+// slide
 const h_adver = new Swiper('#h_adver',{
     direction:'horizontal',
     // effect:'fade',
@@ -36,7 +37,6 @@ const h_adver = new Swiper('#h_adver',{
         delay:3000,
         disableOnInteraction:false, //클릭 후 자동 유지
     },
-    
     loop: true, //반복설정 true=마지막->첫번째(무한)
     speed:1500, //슬라이드 전환 시 부드러운 전환
     navigation: {

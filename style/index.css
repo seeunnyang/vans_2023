@@ -1,0 +1,198 @@
+main {
+    width:calc(100% - 240px); margin:0 auto;
+}
+/* main swiper */
+main #main_adver {}
+main #main_adver .swiper-wrapper {}
+main #main_adver .swiper-wrapper .swiper-slide {
+    display:flex; align-items:center;
+}
+main #main_adver .swiper-wrapper .slide1 {
+    background:url(../images/main_1_slide_1.png) no-repeat center;
+    background-size:cover;
+}
+main #main_adver .swiper-wrapper .slide2 {
+    background:url(../images/main_1_slide_2.png) no-repeat center;
+    background-size:cover;
+}
+main #main_adver .swiper-wrapper .swiper-slide .con {
+    display:inline-block;
+    text-align:center; 
+    margin:420px 0 420px 105px;
+}
+main #main_adver .swiper-wrapper .slide2 .con {
+    margin:420px 0 420px 50px;
+}
+main #main_adver .swiper-wrapper .swiper-slide .con .txt {}
+main #main_adver .swiper-wrapper .swiper-slide .con .txt h2 {
+    font-size:3.157rem; letter-spacing:-0.02em;
+    font-weight:700; margin-bottom:20px;
+}
+main #main_adver .swiper-wrapper .swiper-slide .con .txt p {
+    font-size:1.777rem; letter-spacing:-0.02em;
+    line-height:30px; margin-bottom:50px;
+}
+main #main_adver .swiper-wrapper .swiper-slide .con .buy_btn {}
+main #main_adver .swiper-wrapper .swiper-slide .con .buy_btn a {
+    font-size:1.777rem; letter-spacing:-0.02em;
+    font-weight:700; color:#fff;
+    background:#000; display:inline-block;
+    padding:20px 80px;
+    transition: all 0.5s;
+}
+main #main_adver .swiper-wrapper .swiper-slide .con .buy_btn a:hover {background:#ca1d31;}
+main #main_adver .swiper-button-prev::after,
+main #main_adver .swiper-button-next::after {display:none;}
+main #main_adver .swiper-button-prev {
+    background:url(../images/icon/icon_prev.png) no-repeat center;
+}
+main #main_adver .swiper-button-next {
+    background:url(../images/icon/icon_next.png) no-repeat center;
+}
+/* banner 공통선택자*/
+main .banner {background:pink;}
+/* banner_1 */
+main .banner_1 {
+    background:url(../images/main_2_bg.png) no-repeat center;
+    background-size:cover;
+}
+main .banner_1 .con {
+    padding:125px 70px 125px 0;
+    display:flex; flex-flow:column nowrap; align-items:end; 
+    text-align:end;
+}
+main .banner_1 .con .txt {}
+main .banner_1 .con .txt h2 {
+    font-size:2.369rem; font-weight:700; letter-spacing:-0.02em;
+    margin-bottom:15px;
+}
+main .banner_1 .con .txt p {
+    font-size:1.333rem; letter-spacing:-0.02em;
+    margin-bottom:30px;
+}
+main .banner_1 .con .buy_btn {}
+main .banner_1 .con .buy_btn a {
+    display:inline-block;
+    color:#fff; font-size:1.333rem; 
+    letter-spacing:-0.02em; font-weight:700;
+    background:#000; padding:15px 60px;
+    transition: all 0.5s;
+}
+main .banner_1 .con .buy_btn a:hover {background:#ca1d31;}
+/* banner_2 */
+main .banner_2 {
+    background:url(../images/main_3_bg.png) no-repeat center;
+    background-size:cover;
+}
+main .banner_2 .con {
+    padding:125px 0 125px 70px;
+    display:flex; flex-flow:column nowrap; align-items:start;
+}
+main .banner_2 .con .txt {color:#fff;}
+main .banner_2 .con .txt h2 {
+    font-size:2.369rem; font-weight:700; letter-spacing:-0.02em;
+    margin-bottom:15px;
+}
+main .banner_2 .con .txt p {
+    font-size:1.333rem; letter-spacing:-0.02em;
+    margin-bottom:30px;
+}
+main .banner_2 .con .buy_btn {}
+main .banner_2 .con .buy_btn a {
+    display:inline-block;
+    color:#fff; font-size:1.333rem; 
+    letter-spacing:-0.02em; font-weight:700;
+    background:#000; padding:15px 60px;
+    transition: all 0.5s;
+}
+main .banner_2 .con .buy_btn a:hover {background:#ca1d31;}
+/* category */
+main .category {
+    display:flex; flex-flow:row nowrap; justify-content: space-between;
+}
+main .category > div {
+    margin:50px 0; padding:80px 0;
+    width:33%;
+    display:flex; flex-flow:column nowrap;
+    align-items:center;
+}
+main .category .ca_men {
+    background:url(../images/ca_01.png) no-repeat center;
+    background-size:cover;
+}
+main .category .ca_women {
+    background:url(../images/ca_02.png) no-repeat center;
+    background-size:cover;
+}
+main .category .ca_kids {
+    background:url(../images/ca_03.png) no-repeat center;
+    background-size:cover;
+}
+main .category > div h2 {
+    font-size:2.369rem; letter-spacing:-0.02em;
+    font-weight:700; color:#fff;
+    margin-bottom:10px;
+}
+main .category > div .con {
+    display:flex; flex-flow:column nowrap;
+    text-align:center;
+}
+main .category > div .con a {
+    color:#fff;
+    display:inline-block;
+    padding:5px 20px; margin-top: 15px;
+    font-size:1.333rem; letter-spacing:-0.02em;
+    transition: all 0.3s;
+}
+main .category > div .con a:hover {background:#ca1d31;}
+/* update */
+main .update {
+    background:#f5e8e4;
+    display:flex; flex-flow:column nowrap;
+    align-items: center;
+    padding:50px 0;
+}
+main .update > .title {
+    text-align:center;
+    margin-bottom:50px;
+}
+main .update .title .mini {
+    font-size:1.333rem; letter-spacing:-0.02em;
+    color:#ca1d31;
+    margin-bottom:20px;
+}
+main .update .title .sub_title {
+    font-size:2.369rem; letter-spacing:-0.02em;
+    font-weight:700;
+}
+main .update .con {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    margin-bottom:50px;
+    width:100%;
+}
+main .update .con > div {
+    display:flex; flex-flow:column nowrap;
+    align-items: start;
+    width:24%;
+}
+main .update .con > div .img {width:100%;}
+main .update .con > div .img img {width:100%;}
+main .update .con > div .title {
+    letter-spacing:-0.02em; margin-top:10px;
+}
+main .update .con > div .tag {
+    letter-spacing:-0.02em;
+    margin-top:10px; color:#7e7e7e;
+}
+main .update .buy_btn {}
+main .update .buy_btn a {
+    font-size:1.333rem; letter-spacing:-0.02em;
+    font-weight:700;
+    display:inline-block; padding:20px 80px;
+    background:#000; color:#fff;
+    transition:all 0.5s;
+}
+main .update .buy_btn a:hover {
+    background:#ca1d31;
+}

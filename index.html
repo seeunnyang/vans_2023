@@ -14,6 +14,8 @@
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/responsive.css">
 </head>
 <body>
     <header>
@@ -46,7 +48,7 @@
                                             <dd><a href="#">NEW</a></dd>
                                             <dd><a href="#">신발 신상품</a></dd>
                                             <dd><a href="#">의류 신상품</a></dd>
-                                            <dd><a href="#">악세사리 신상품</a></dd>
+                                            <dd><a href="#">악세서리 신상품</a></dd>
                                             <dd><a href="#">키즈 신상품</a></dd>
                                         </dl>
                                         <dl>
@@ -175,7 +177,7 @@
                                 </div>
                             </div> 
                         </li>
-                        <li><a href="#" id="kide">KIDS</a>
+                        <li><a href="#" id="kids">KIDS</a>
                             <div class="sub_bg kids_sub">
                                 <div class="sub">
                                     <div class="s_left">
@@ -285,6 +287,12 @@
                 </nav>
             </div>
             <div class="h_right">
+                <a href="#" class="m_nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <a href="#" class="m_search"><img src="./images/icon/m_search.png" alt="m_검색"></a>
                 <form action="#" method="get" id="search_frm">
                     <fieldset>
                         <legend class="skip">검색양식</legend>
@@ -298,9 +306,108 @@
             </div>
         </div>
     </header>
+    <!-- <?php include('./header.php') ?> -->
     <main>
-
-    </main>
+        <div class="swiper" id="main_adver"> <!-- 부모한테 구분용 id주기 -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1">
+                    <div class="con">
+                        <div class="txt">
+                            <h2>VANS X NICK MICHEL</h2>
+                            <p>서부 해안 차세대 스케이터,<br>닉 마이클과 협업한 스케이트 컬렉션</p>
+                        </div>
+                        <p class="buy_btn"><a href="#">구매하기</a></p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide2">
+                    <div class="con">
+                        <div class="txt">
+                            <h2>STRESSED + RECREATION</h2>
+                            <p>90년대 그런지 룩에서 영감받은<br>VINTAGE RETRO COLLECTION</p>
+                        </div>
+                        <p class="buy_btn"><a href="#">구매하기</a></p>
+                    </div>
+                </div>
+            </div> <!-- end swiper-wrapper -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div><!-- end swiper adver -->
+        <section class="banner banner_1">
+            <div class="con">
+                <div class="txt">
+                    <h2>뉴슬립 신제품</h2>
+                    <p>시즈널 컬러와 체커보드를 더한, 새로운 뉴(KNU) 컬렉션</p>
+                </div>
+                <p class="buy_btn"><a href="#">구매하기</a></p>
+            </div>
+        </section>
+        <section class="banner banner_2">
+            <div class="con">
+                <div class="txt">
+                    <h2>Vans x Tagi.</h2>
+                    <p>독특한 패브릭 활용과 재밌는 디자인을 추구하는 <br>라이프 스타일 브랜드 Tagi. 와 협업 컬렉션</p>
+                </div>
+                <p class="buy_btn"><a href="#">구매하기</a></p>
+            </div>
+        </section>
+        <section class="category">
+            <div class="ca_men">
+                <h2>MEN</h2>
+                <div class="con">
+                    <a href="#">신발</a>
+                    <a href="#">의류</a>
+                    <a href="#">악세서리</a>
+                    <a href="#">커스텀</a>
+                </div>
+            </div>
+            <div class="ca_women">
+                <h2>WOMEN</h2>
+                <div class="con">
+                    <a href="#">신발</a>
+                    <a href="#">의류</a>
+                    <a href="#">악세서리</a>
+                    <a href="#">커스텀</a>
+                </div>
+            </div>
+            <div class="ca_kids">
+                <h2>KIDS</h2>
+                <div class="con">
+                    <a href="#">토들러</a>
+                    <a href="#">키즈</a>
+                    <a href="#">커스텀</a>
+                </div>
+            </div>
+        </section>
+        <section class="update">
+            <div class="title">
+                <p class="mini">-업데이트-</p>
+                <p class="sub_title">VANS NEWS</p>
+            </div>
+            <div class="con">
+                <div class="nick">
+                    <a href="#" class="img"><img src="./images/up_01.png" alt=""></a>
+                    <a href="#" class="title">반스 x 닉 마이클, 클래식 스케이트 컬렉션 선보여</a>
+                    <a href="#" class="tag">SKATE</a>
+                </div>
+                <div class="tagi">
+                    <a href="#" class="img"><img src="./images/up_02.png" alt=""></a>
+                    <a href="#" class="title">반스 x 타기. 첫 협업 컬렉션 선보여</a>
+                    <a href="#" class="tag">COLLABORATION</a>
+                </div>
+                <div class="newslip">
+                    <a href="#" class="img"><img src="./images/up_03.jpg" alt=""></a>
+                    <a href="#" class="title">반스, 뉴슬립 컬렉션 선보여</a>
+                    <a href="#" class="tag">CLASSICS</a>
+                </div>
+                <div class="vault">
+                    <a href="#" class="img"><img src="./images/up_04.png" alt=""></a>
+                    <a href="#" class="title">볼트 바이 반스 x JJJ자운드, 세 번째 협업 컬렉션 선보여</a>
+                    <a href="#" class="tag">VAULT</a>
+                </div>
+            </div>
+            <p class="buy_btn"><a href="#">더 알아보기</a></p>
+        </section>
+    </main> 
     <footer>
         <div class="container">
             <div class="f_top">
@@ -342,6 +449,8 @@
             </div>
         </div>
     </footer>
+    <!-- <?php include('./footer.php') ?> -->
     <script src="./script/common.js"></script>
+    <script src="./script/index.js"></script>
 </body>
 </html>
