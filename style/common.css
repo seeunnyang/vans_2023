@@ -1,5 +1,5 @@
 /* header,footer */
-header {}
+header {z-index: 999;}
 /* header slide */
 header #h_adver {
     background:#1c1c1c;
@@ -48,11 +48,14 @@ header .container .h_left nav ul li {padding:0 10px; }
 header .container .h_left nav ul li > a {
     font-weight:700; letter-spacing:-0.02em;
 }
+header .container .h_left nav ul li #vault,
+header .container .h_left nav ul li #sale {color:#CA1D31;}
 header .container .h_left nav ul li > a:hover {color:#CA1D31;}
 header .container .h_left nav ul li .sub_bg {
+    z-index: 999;
     background:#000;
     width:100%; height:250px; margin:0 auto;
-    position:absolute; top:120px; left:0;
+    position:absolute; top:115px; left:0;
     padding-top:30px;
 }
 header .container .h_left nav ul li .sub_bg .sub {
@@ -100,7 +103,47 @@ header .container .h_right #search_frm fieldset #search_btn {}
 header .container .h_right #search_frm fieldset #search_btn img {}
 header .container .h_right a {margin-left:10px;}
 header .container .h_right a img {}
-
+/* open nav */
+header .container .open_nav {
+    background:#000;
+    width:100%; margin:0 auto;
+    position:absolute; top:110px; left:0;
+    display:none;
+    z-index: 900;
+}
+header .container .open_nav ul {
+    display:flex; flex-flow:column nowrap;
+}
+header .container .open_nav ul li {
+    padding:20px 0 20px 20px;
+    border-bottom:1px solid #fff;
+}
+header .container .open_nav ul li:last-child {border-bottom:none;}
+header .container .open_nav ul li > a {
+    color:#fff;
+    letter-spacing:-0.02em; font-weight:700;
+    position: relative; z-index:400;
+}
+header .container .open_nav ul li .open_sub {
+    display:none;
+    position:absolute; left: 0;
+    padding-left:20px;
+    z-index:500;
+    width:100%;
+    background:#1c1c1c;
+}
+header .container .open_nav ul li .open_sub dl {}
+header .container .open_nav ul li .open_sub dl dt {}
+header .container .open_nav ul li .open_sub dl dt a {
+    color:#fff; display:inline-block;
+    padding:10px 0; font-weight:700; letter-spacing:-0.02em;
+}
+header .container .open_nav ul li .open_sub dl dd {}
+header .container .open_nav ul li .open_sub dl dd a {
+    color:#fff; display:inline-block;
+    margin-bottom:8px; font-size:0.75rem; letter-spacing:-0.02em;
+}
+header .container .open_nav ul li .open_sub dl dd a:hover {color:#CA1D31;}
 /* footer */
 footer {
     background:#1c1c1c;
