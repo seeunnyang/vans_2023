@@ -178,7 +178,15 @@ main .update .con > div {
     width:24%;
 }
 main .update .con > div .img {width:100%;}
-main .update .con > div .img img {width:100%;}
+main .update .con > div .img img {
+    width:100%;
+    transform:scale(1.0);
+    transition: all 0.5s ;
+}
+main .update .con > div:hover .img img {
+    transform:scale(1.03);
+    transition:transform.5s;
+}
 main .update .con > div .title {
     letter-spacing:-0.02em; margin-top:10px;
 }
@@ -186,6 +194,7 @@ main .update .con > div .tag {
     letter-spacing:-0.02em;
     margin-top:10px; color:#7e7e7e;
 }
+main .update .con > div .tag:hover {color:#000;}
 main .update .buy_btn {}
 main .update .buy_btn a {
     font-size:1.333rem; letter-spacing:-0.02em;

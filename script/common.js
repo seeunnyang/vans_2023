@@ -60,17 +60,41 @@ for(let i of sub){i.addEventListener('mouseout',function(){
 console.log('---------------------')
 //m_nav 클릭시 open_nav 나타나기
 //open_nav > li > a 클릭시 해당 open_sub 나타나기
+//close 클릭시 open_nev 숨기기
+//m_search 클릭시 open_search 나타나기
+//open_search_close 클릭시 open_search 숨기기
 //변수생성
 const m_nav = document.querySelector('header .container .h_right .m_nav')
 const open_nav = document.querySelector('header .container .open_nav')
 const aTag = document.querySelectorAll('header .container .open_nav ul li > a')
 const open_sub = document.querySelectorAll('header .container .open_nav ul li .open_sub')
+const open_nav_close = document.querySelector('header .container .open_nav #open_nav_close')
+const open_search = document.querySelector('header .container .open_search')
+const m_search = document.querySelector('header .container .h_right .m_search')
+const open_search_close =document.querySelector('header .container .open_search #open_search_close')
 console.log(m_nav, open_nav,aTag, open_sub)
+console.log(m_search, open_search, open_search_close)
+
+//m_search 클릭시 open_search 나타나기
+m_search.addEventListener('click',function(e){
+    e.preventDefault()
+    open_search.style.display='flex'
+})
+//open_search_close 클릭시 open_search 숨기기
+open_search_close.addEventListener('click',function(e){
+    e.preventDefault()
+    open_search.style.display='none'
+})
 
 //m_nav 클릭시 open_nav 나타나기
 m_nav.addEventListener('click',function(e){
     e.preventDefault()
     open_nav.style.display='block'
+})
+//open_nav_close 클릭시 open_nev 숨기기
+open_nav_close.addEventListener('click',function(e){
+    e.preventDefault()
+    open_nav.style.display='none'
 })
 //open_nav > li > a 클릭시 해당 open_sub 나타나기
 aTag.forEach(function(t,i,a){
@@ -80,3 +104,4 @@ aTag.forEach(function(t,i,a){
         open_sub[i].style.display='block'
     })
 })
+
