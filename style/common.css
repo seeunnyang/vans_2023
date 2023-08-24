@@ -44,7 +44,7 @@ header .container .h_left nav {}
 header .container .h_left nav ul {
     display:flex; flex-flow:row wrap;
 }
-header .container .h_left nav ul li {padding:0 10px; }
+header .container .h_left nav ul li {padding:20px 10px;}
 header .container .h_left nav ul li > a {
     font-weight:700; letter-spacing:-0.02em;
 }
@@ -81,7 +81,10 @@ header .container .h_left nav ul li .sub_bg .sub .s_right {
     display:flex; flex-flow: row wrap;
     width:450px;
 }
-header .container .h_left nav ul li .sub_bg .sub .s_right a {}
+header .container .h_left nav ul li .sub_bg .sub .s_right a {
+    transition:all 0.3s; transform-origin:left bottom;
+}
+header .container .h_left nav ul li .sub_bg .sub .s_right a:hover {transform:rotate(-5deg);}
 header .container .h_left nav ul li .sub_bg .sub .s_right a img {}
 header .container .h_right {
     display:flex; align-items:center;
@@ -119,6 +122,8 @@ header .container .open_nav ul li {
     border-bottom:1px solid #fff;
 }
 header .container .open_nav ul li:last-child {border-bottom:none;}
+header .container .open_nav ul #vault,
+header .container .open_nav ul #sale {color:#CA1D31;}
 header .container .open_nav ul li > a {
     color:#fff;
     letter-spacing:-0.02em; font-weight:700;
@@ -144,6 +149,7 @@ header .container .open_nav ul li .open_sub dl dd a {
     margin-bottom:8px; font-size:0.75rem; letter-spacing:-0.02em;
 }
 header .container .open_nav ul li .open_sub dl dd a:hover {color:#CA1D31;}
+
 /* footer */
 footer {
     background:#1c1c1c;

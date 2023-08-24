@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko
+">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>VANS</title>
+    <title>WOMEN | VANS</title>
     <!-- swiper slide -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -16,8 +17,165 @@
     <link rel="stylesheet" href="./style/common.css">
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/responsive.css">
+    <style>
+        main {width:100%; margin:0 auto; background:#F1F2ED;}
+        main .container {
+            width:calc(100% - 240px); margin:0 auto;
+            padding-top:20px;
+        }
+        /* mini_title */
+        main .container .mini_title {margin-bottom:50px;}
+        main .container .mini_title .home {letter-spacing:-0.02em;}
+        main .container .mini_title span {margin:0 5px;}
+        main .container .mini_title .women {
+            letter-spacing:-0.02em; font-size:1.333rem; color:#ca1d31;
+            font-weight:500;
+        }
+        /* title */
+        main .container > .title {
+            margin-bottom:50px;
+        }
+        main .container > .title h1 {
+            font-size:1.777rem; letter-spacing:-0.02em;
+            font-weight:700; margin-bottom:20px;
+        }
+        main .container > .title .con {
+            display:flex; justify-content:space-between;
+        }
+        main .container > .title .con .left {
+        }
+        main .container > .title .con .left p {
+            letter-spacing:-0.02em;
+        }
+        main .container > .title .con .right {
+            display:flex;
+        }
+        main .container > .title .con .right .filter {
+            display:flex; align-items:center;
+            margin-right:20px;
+        }
+        main .container > .title .con .right .filter p {
+            letter-spacing:-0.02em; width:85px;
+        }
+        main .container > .title .con .right .filter p img {}
+        main .container > .title .con .right #product_align {border:none; background:#F1F2ED;}
+        main .container > .title .con .right #product_align option {
+            letter-spacing:-0.02em;
+        }
+        /* contents */
+        main .container .contents {
+            display:flex;
+        }
+        /* contents .filters */
+        main .container .contents .filters { 
+            width:20%; height:750px;
+            background:#fff;
+            padding:10px; margin-right:30px;
+        }
+        main .container .contents .filters .f_title {
+            display:flex; justify-content:space-between;
+            padding:5px 0; border-bottom:1px solid #000;
+            margin-bottom:50px;
+        }
+        main .container .contents .filters .f_title .title {
+            font-size:1.333rem; letter-spacing:-0.02em;
+            font-weight:500;
+        }
+        main .container .contents .filters .f_title .reset {
+            letter-spacing:-0.02em; color:#7e7e7e;
+        }
+        main .container .contents .filters .color {
+            margin-bottom:50px;
+        }
+        main .container .contents .filters .color .c_t {
+            letter-spacing:-0.02em; margin-bottom:10px;
+            font-weight:500;
+        }
+        main .container .contents .filters .color .c_con {
+            display:flex; flex-flow:row wrap; justify-content:space-between;
+        }
+        main .container .contents .filters .color .c_con a {
+            display:inline-block; width:40px; height:40px;
+            border:1px solid #7e7e7e; margin:5px 20px 5px 0;
+        }
+        main .container .contents .filters .color .c_con #beige {background:#C9AF86;}
+        main .container .contents .filters .color .c_con #black {background:#000;}
+        main .container .contents .filters .color .c_con #ivory {background:#FDFDEF;}
+        main .container .contents .filters .color .c_con #brown {background:#563614;}
+        main .container .contents .filters .color .c_con #green {
+            background:#53BA25; margin-right:0;
+        }
+        main .container .contents .filters .color .c_con #red {background:#FA0F2B;}
+        main .container .contents .filters .color .c_con #orange {background:#FF8500;}
+        main .container .contents .filters .color .c_con #yellow {background:#F8EF05;}
+        main .container .contents .filters .color .c_con #blue {background:#4C62E7;}
+        main .container .contents .filters .color .c_con #purple {
+            background:#B17DFF; margin-right:0;
+        }
+        main .container .contents .filters .size {
+            margin-bottom:50px; 
+        }
+        main .container .contents .filters .size .s_t {
+            letter-spacing:-0.02em; margin-bottom:10px;
+            font-weight:500;
+        }
+        main .container .contents .filters .size .s_con {
+            display:flex; flex-flow:row wrap; justify-content:space-between;
+        }
+        main .container .contents .filters .size .s_con a {
+            letter-spacing:-0.02em;
+            border:1px solid #7e7e7e; color:#7e7e7e;
+            padding:10px 30px;
+            margin:10px 0;
+        }
+        main .container .contents .filters .price {}
+        main .container .contents .filters .price .p_t {
+            letter-spacing:-0.02em; margin-bottom:20px;
+            font-weight:500;
+        }
+        main .container .contents .filters .price .p_con {}
+        main .container .contents .filters .price .p_con .check {
+            display:flex; margin:10px 0;
+        }
+        main .container .contents .filters .price .p_con .check #checkbox {
+            margin-right:10px; width:15px;
+        }
+        main .container .contents .filters .price .p_con .check p {
+            color:#7e7e7e;
+        }
+        /* contents .product_list */
+        main .container .contents .product_list {
+            display:flex; flex-flow:row wrap; justify-content: space-between;
+            width:80%;
+        }
+        main .container .contents .product_list .item {
+            position:relative; margin-bottom:50px;
+        }
+        main .container .contents .product_list .item #img {}
+        main .container .contents .product_list .item #img img {
+            width:300px;
+        }
+        main .container .contents .product_list .item .txt {
+            text-align:center;
+        }
+        main .container .contents .product_list .item .txt .new {
+            letter-spacing:-0.02em; font-weight:500;
+            color:#ca1d31; margin:8px 0 13px 0;
+        }
+        main .container .contents .product_list .item .txt a {}
+        main .container .contents .product_list .item .txt a .iten_name {letter-spacing:-0.02em;}
+        main .container .contents .product_list .item .txt .item_price {
+            letter-spacing:-0.02em; font-weight:700;
+            margin-top:8px;
+        }
+        main .container .contents .product_list .item #hart {
+            position:absolute; top:10px; right:10px;
+        }
+        main .container .contents .product_list .item #hart img {}
+    </style>
 </head>
 <body>
+    <!-- <?php include('./header.php') ?> -->
     <header>
         <div class="swiper" id="h_adver"> <!-- 부모한테 구분용 id주기 -->
             <div class="swiper-wrapper">
@@ -471,108 +629,210 @@
             </div>
         </div>
     </header>
-    <!-- <?php include('./header.php') ?> -->
     <main>
-        <div class="swiper" id="main_adver"> <!-- 부모한테 구분용 id주기 -->
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide1">
-                    <div class="con">
-                        <div class="txt">
-                            <h2>VANS X NICK MICHEL</h2>
-                            <p>서부 해안 차세대 스케이터,<br>닉 마이클과 협업한 스케이트 컬렉션</p>
-                        </div>
-                        <p class="buy_btn"><a href="#">구매하기</a></p>
-                    </div>
-                </div>
-                <div class="swiper-slide slide2">
-                    <div class="con">
-                        <div class="txt">
-                            <h2>STRESSED + RECREATION</h2>
-                            <p>90년대 그런지 룩에서 영감받은<br>VINTAGE RETRO COLLECTION</p>
-                        </div>
-                        <p class="buy_btn"><a href="#">구매하기</a></p>
-                    </div>
-                </div>
-            </div> <!-- end swiper-wrapper -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div><!-- end swiper adver -->
-        <section class="banner banner_1">
-            <div class="con">
-                <div class="txt">
-                    <h2>뉴슬립 신제품</h2>
-                    <p>시즈널 컬러와 체커보드를 더한, 새로운 뉴(KNU) 컬렉션</p>
-                </div>
-                <p class="buy_btn"><a href="#">구매하기</a></p>
+        <div class="container">
+            <div class="mini_title">
+                <a href="#" class="home">HOME</a>
+                <span>/</span>
+                <a href="#" class="women">WOMEN</a>
             </div>
-        </section>
-        <section class="banner banner_2">
-            <div class="con">
-                <div class="txt">
-                    <h2>Vans x Tagi.</h2>
-                    <p>독특한 패브릭 활용과 재밌는 디자인을 추구하는 <br>라이프 스타일 브랜드 Tagi. 와 협업 컬렉션</p>
-                </div>
-                <p class="buy_btn"><a href="#">구매하기</a></p>
-            </div>
-        </section>
-        <section class="category">
-            <div class="ca_men">
-                <h2>MEN</h2>
-                <div class="con">
-                    <a href="#">신발</a>
-                    <a href="#">의류</a>
-                    <a href="#">악세서리</a>
-                    <a href="#">커스텀</a>
-                </div>
-            </div>
-            <div class="ca_women">
-                <h2>WOMEN</h2>
-                <div class="con">
-                    <a href="#">신발</a>
-                    <a href="#">의류</a>
-                    <a href="#">악세서리</a>
-                    <a href="#">커스텀</a>
-                </div>
-            </div>
-            <div class="ca_kids">
-                <h2>KIDS</h2>
-                <div class="con">
-                    <a href="#">토들러</a>
-                    <a href="#">키즈</a>
-                    <a href="#">커스텀</a>
-                </div>
-            </div>
-        </section>
-        <section class="update">
             <div class="title">
-                <p class="mini">-업데이트-</p>
-                <p class="sub_title">VANS NEWS</p>
-            </div>
-            <div class="con">
-                <div class="nick">
-                    <a href="#" class="img"><img src="./images/up_01.png" alt=""></a>
-                    <a href="#" class="title">반스 x 닉 마이클, 클래식 스케이트 컬렉션 선보여</a>
-                    <a href="#" class="tag">SKATE</a>
-                </div>
-                <div class="tagi">
-                    <a href="#" class="img"><img src="./images/up_02.png" alt=""></a>
-                    <a href="#" class="title">반스 x 타기. 첫 협업 컬렉션 선보여</a>
-                    <a href="#" class="tag">COLLABORATION</a>
-                </div>
-                <div class="newslip">
-                    <a href="#" class="img"><img src="./images/up_03.jpg" alt=""></a>
-                    <a href="#" class="title">반스, 뉴슬립 컬렉션 선보여</a>
-                    <a href="#" class="tag">CLASSICS</a>
-                </div>
-                <div class="vault">
-                    <a href="#" class="img"><img src="./images/up_04.png" alt=""></a>
-                    <a href="#" class="title">볼트 바이 반스 x JJJ자운드, 세 번째 협업 컬렉션 선보여</a>
-                    <a href="#" class="tag">VAULT</a>
+                <h1>WOMEN</h1>
+                <div class="con">
+                    <div class="left">
+                        <p>상품 개수 : 505</p>
+                    </div>
+                    <div class="right">
+                        <a href="#" class="filter">
+                            <p>필터 숨기기</p>
+                            <img src="./images/icon/filters.png" alt="">
+                        </a>
+                        <select id="product_align">
+                            <option value="신상품순">신상품순</option>
+                            <option value="인기상품순">인기상품순</option>
+                            <option value="높은가격순">높은가격순</option>
+                            <option value="낮은가격순">낮은가격순</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-            <p class="buy_btn"><a href="#">더 알아보기</a></p>
-        </section>
-    </main> 
+            <div class="contents">
+                <div class="filters">
+                    <div class="f_title">
+                        <p class="title">FILTERS</p>
+                        <p class="reset">초기화</p>
+                    </div>
+                    <div class="color">
+                        <p class="c_t">Color</p>
+                        <div class="c_con">
+                            <a href="#" id="beige"></a>
+                            <a href="#" id="black"></a>
+                            <a href="#" id="ivory"></a>
+                            <a href="#" id="brown"></a>
+                            <a href="#" id="green"></a>
+                            <a href="#" id="red"></a>
+                            <a href="#" id="orange"></a>
+                            <a href="#" id="yellow"></a>
+                            <a href="#" id="blue"></a>
+                            <a href="#" id="purple"></a>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <p class="s_t">Size</p>
+                        <div class="s_con">
+                            <a href="#" id="s215">215</a>
+                            <a href="#" id="s220">220</a>
+                            <a href="#" id="s225">225</a>
+                            <a href="#" id="s230">230</a>
+                            <a href="#" id="s235">235</a>
+                            <a href="#" id="s240">240</a>
+                            <a href="#" id="s245">245</a>
+                            <a href="#" id="s250">250</a>
+                            <a href="#" id="s255">255</a>
+                            <a href="#" id="s260">260</a>
+                            <a href="#" id="s265">265</a>
+                            <a href="#" id="s270">270</a>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p class="p_t">Price</p>
+                        <div class="p_con">
+                            <div class="check">
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <p id="p0">0 원 ~ 50,000원</p>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <p id="p5">50,000 원 ~ 80,000원</p>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <p id="p8">80,000 원 ~ 100,000원</p>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <p id="p10">100,000 원 ~ 150,000원</p>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <p id="p15">150,000 원 ~ 300,000원</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_list">
+                    <div class="item item_1">
+                        <a href="#" id="img"><img src="./images/product/product_01.jpg" alt=""></a>
+                        <div class="txt">
+                            <p class="new">NEW ARRIVAL</p>
+                            <a href="#"><p class="iten_name">Harbor 하버 뮬 VR3</p></a>
+                            <p class="item_price">79,000 원</p>
+                        </div>
+                        <a href="#" id="hart"><img src="./images/product/hart.png" alt=""></a>
+                    </div>
+                    <div class="item item_2">
+                        <a href="#" id="img"><img src="./images/product/product_02.jpg" alt=""></a>
+                        <div class="txt">
+                            <p class="new">NEW ARRIVAL</p>
+                            <a href="#"><p class="iten_name">Harbor 하버 뮬 VR3</p></a>
+                            <p class="item_price">79,000 원</p>
+                        </div>
+                        <a href="#" id="hart"><img src="./images/product/hart.png" alt=""></a>
+                    </div>
+                    <div class="item item_3">
+                        <a href="#" id="img"><img src="./images/product/product_03.jpg" alt=""></a>
+                        <div class="txt">
+                            <p class="new">NEW ARRIVAL</p>
+                            <a href="#"><p class="iten_name">미첼 카모 Era 에라</p></a>
+                            <p class="item_price">79,000 원</p>
+                        </div>
+                        <a href="#" id="hart"><img src="./images/product/hart.png" alt=""></a>
+                    </div>
+                    <div class="item item_4">
+                        <a href="#" id="img"><img src="./images/product/product_04.jpg" alt=""></a>
+                        <div class="txt">
+                            <p class="new">NEW ARRIVAL</p>
+                            <a href="#"><p class="iten_name">미첼 카모 Old Skool 올드스쿨</p></a>
+                            <p class="item_price">95,000 원</p>
+                        </div>
+                        <a href="#" id="hart"><img src="./images/product/hart.png" alt=""></a>
+                    </div>
+                    <div class="item item_5">
+                        <a href="#" id="img"><img src="./images/product/product_05.jpg" alt=""></a>
+                        <div class="txt">
+                            <p class="new">NEW ARRIVAL</p>
+                            <a href="#"><p class="iten_name">미첼 카모 SK8-Hi 스케이트-하이</p></a>
+                            <p class="item_price">105,000 원</p>
+                        </div>
+                        <a href="#" id="hart"><img src="./images/product/hart.png" alt=""></a>
+                    </div>
+                    <div class="item item_6">
+                        <a href="#" id="img"><img src="./images/product/product_06.jpg" alt=""></a>
+                        <div class="txt">
+                            <p class="new">NEW ARRIVAL</p>
+                            <a href="#"><p class="iten_name">피그 스웨이드 Authentic 어센틱</p></a>
+                            <p class="item_price">79,000 원</p>
+                        </div>
+                        <a href="#" id="hart"><img src="./images/product/hart.png" alt=""></a>
+                    </div>
+                    <div class="item item_7">
+                        <a href="#" id="img"><img src="./images/product/product_07.jpg" alt=""></a>
+                        <div class="txt">
+                            <p class="new">NEW ARRIVAL</p>
+                            <a href="#"><p class="iten_name">피그 스웨이드 클래식 Slip-on 슬립온</p></a>
+                            <p class="item_price">79,000 원</p>
+                        </div>
+                        <a href="#" id="hart"><img src="./images/product/hart.png" alt=""></a>
+                    </div>
+                    <div class="item item_8">
+                        <a href="#" id="img"><img src="./images/product/product_08.jpg" alt=""></a>
+                        <div class="txt">
+                            <p class="new">NEW ARRIVAL HOT</p>
+                            <a href="#"><p class="iten_name">체커 Slip-On 슬립-온 VR3 SF</p></a>
+                            <p class="item_price">85,000 원</p>
+                        </div>
+                        <a href="#" id="hart"><img src="./images/product/hart.png" alt=""></a>
+                    </div>
+                    <div class="item item_9">
+                        <a href="#" id="img"><img src="./images/product/product_09.jpg" alt=""></a>
+                        <div class="txt">
+                            <p class="new">NEW ARRIVAL</p>
+                            <a href="#"><p class="iten_name">체커 SK8-Hi 스케이트-하이 38 데콘 VR3 SF</p></a>
+                            <p class="item_price">105,000 원</p>
+                        </div>
+                        <a href="#" id="hart"><img src="./images/product/hart.png" alt=""></a>
+                    </div>
+                    <div class="item item_10">
+                        <a href="#" id="img"><img src="./images/product/product_10.jpg" alt=""></a>
+                        <div class="txt">
+                            <p class="new">NEW ARRIVAL HOT</p>
+                            <a href="#"><p class="iten_name">체커 Authentic 어센틱 VR3 SF</p></a>
+                            <p class="item_price">85,000 원</p>
+                        </div>
+                        <a href="#" id="hart"><img src="./images/product/hart.png" alt=""></a>
+                    </div>
+                    <div class="item item_11">
+                        <a href="#" id="img"><img src="./images/product/product_11.jpg" alt=""></a>
+                        <div class="txt">
+                            <p class="new">NEW ARRIVAL</p>
+                            <a href="#"><p class="iten_name">체커 스타일 36 STYLE 36 데콘 VR3 SF</p></a>
+                            <p class="item_price">95,000 원</p>
+                        </div>
+                        <a href="#" id="hart"><img src="./images/product/hart.png" alt=""></a>
+                    </div>
+                    <div class="item item_12">
+                        <a href="#" id="img"><img src="./images/product/product_12.jpg" alt=""></a>
+                        <div class="txt">
+                            <p class="new">NEW ARRIVAL</p>
+                            <a href="#"><p class="iten_name">체커 Authentic 어센틱 VR3 SF</p></a>
+                            <p class="item_price">85,000 원</p>
+                        </div>
+                        <a href="#" id="hart"><img src="./images/product/hart.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </main>
     <footer>
         <div class="container">
             <div class="f_top">
@@ -616,6 +876,5 @@
     </footer>
     <!-- <?php include('./footer.php') ?> -->
     <script src="./script/common.js"></script>
-    <script src="./script/index.js"></script>
 </body>
 </html>

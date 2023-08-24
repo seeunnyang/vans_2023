@@ -37,12 +37,27 @@ nav.forEach(function(t,i,a){
         sub[i].style.display='block'
     })
 })
+console.log(nav[0])
+//개별내비 마우스올렸을 때 해당 sub나타내기
+/* nav[0].addEventListener('mouseover',function(){
+    sub[0].style.display='block'
+})
+nav[1].addEventListener('mouseover',function(){
+    sub[1].style.display='block'
+})
+nav[2].addEventListener('mouseover',function(){
+    sub[2].style.display='block'
+})
+nav[3].addEventListener('mouseover',function(){
+    sub[3].style.display='block'
+}) */
 //sub에 마우스 나갔을 때 nav 숨기기
 for(let i of sub){i.addEventListener('mouseout',function(){
     for(let j of sub){j.style.display='none'}
 })} 
 
 
+console.log('---------------------')
 //m_nav 클릭시 open_nav 나타나기
 //open_nav > li > a 클릭시 해당 open_sub 나타나기
 //변수생성
