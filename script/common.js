@@ -20,40 +20,20 @@ const h_adver = new Swiper('#h_adver',{
 //nav에 마우스 올렸을 때 해당 nav 나타내기
 //변수 생성
 const sub = document.querySelectorAll('ul > li > .sub_bg')
-const nav = document.querySelectorAll('ul > li ')
+const nav = document.querySelectorAll('ul > .nav_sub ')
 console.log(sub, nav)
 //처음 sub 숨기기
 for(let i of sub){i.style.display='none'}
-/* //nav에 마우스 올렸을 때 해당 nav 나타내기
-for(let i of nav){i.addEventListener('mouseover',function(){
-    for(let j of sub){j.style.display='block'}
-})}
-//nav에 마우스 나갔을 때 nav 숨기기
-for(let i of nav){i.addEventListener('mouseout',function(){
-    for(let j of sub){j.style.display='none'}
-})} */
+
 nav.forEach(function(t,i,a){
     t.addEventListener('mouseover',function(){
-        for(let i of sub){i.style.display='none'}
+        for(let j of sub){j.style.display='none'}
         sub[i].style.display='block'
     })
 })
 console.log(nav[0])
-//개별내비 마우스올렸을 때 해당 sub나타내기
-/* nav[0].addEventListener('mouseover',function(){
-    sub[0].style.display='block'
-})
-nav[1].addEventListener('mouseover',function(){
-    sub[1].style.display='block'
-})
-nav[2].addEventListener('mouseover',function(){
-    sub[2].style.display='block'
-})
-nav[3].addEventListener('mouseover',function(){
-    sub[3].style.display='block'
-}) */
-//sub에 마우스 나갔을 때 nav 숨기기
-for(let i of sub){i.addEventListener('mouseout',function(){
+//nav에 마우스 나갔을 때 nav 숨기기
+for(let i of nav){i.addEventListener('mouseout',function(){
     for(let j of sub){j.style.display='none'}
 })} 
 
@@ -67,14 +47,14 @@ console.log('---------------------')
 //m_search 클릭시 open_search 나타나기
 //open_search_close 클릭시 open_search 숨기기
 //변수생성
-const m_nav = document.querySelector('header .container .h_right .m_nav')
-const open_nav = document.querySelector('header .container .open_nav')
-const aTag = document.querySelectorAll('header .container .open_nav ul li > a')
-const open_sub = document.querySelectorAll('header .container .open_nav ul li .open_sub')
+const m_nav = document.querySelector('header .container .h_right .m_nav') //mav아이콘
+const open_nav = document.querySelector('header .container .open_nav')//open_nav
+const aTag = document.querySelectorAll('header .container .open_nav ul .gnb')//open_nav>li>
+const open_sub = document.querySelectorAll('header .container .open_nav ul li .open_sub')//open_nav > open_sub
 const open_nav_close = document.querySelector('header .container .open_nav #open_nav_close')
 const open_search = document.querySelector('header .container .open_search')
-const m_search = document.querySelector('header .container .h_right .m_search')
-const open_search_close =document.querySelector('header .container .open_search #open_search_close')
+const m_search = document.querySelector('header .container .h_right .m_search') //검색아이콘
+const open_search_close =document.querySelector('header .container .open_search #open_search_close')//검색닫기
 console.log(m_nav, open_nav,aTag, open_sub)
 console.log(m_search, open_search, open_search_close)
 

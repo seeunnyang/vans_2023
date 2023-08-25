@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>MAP | VANS</title>
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- favicon, 스타일 -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <style>
+        main {
+            width:calc(100% - 240px); margin:0 auto;
+        }
+        main > .title {
+            padding:50px;
+            text-align:center;
+            border-bottom:1px solid #000;
+        }
+        main > .title h1 {
+            font-size:1.777rem; letter-spacing:-0.02em;
+        }
+        main .container {
+            display:flex;
+            padding:50px 0;
+        }
+        main .container .left {width:40%;}
+        main .container .left h2 {
+            font-size:1.333rem; letter-spacing:-0.02em;
+            margin-bottom:30px;
+        }
+        main .container .left .map_tit {
+            margin-left:20px;
+            display:flex; flex-flow:column nowrap;
+        }
+        main .container .left .map_tit a {
+            width:430px;
+            padding:20px 0; display:inline-block;
+            border-bottom:1px solid #7e7e7e;
+        }
+        main .container .left .map_tit a:hover p {color:#ca1d31;}
+        /* 해당 주소만 글자 색 변경 */
+        main .container .left .map_tit #address1 p {color:#ca1d31;} 
+        main .container .left .map_tit a .title {
+            letter-spacing:-0.02em;
+            font-weight:500; margin-bottom:10px;
+        }
+        main .container .left .map_tit a .address {letter-spacing:-0.02em; margin-bottom:5px;}
+        main .container .left .map_tit a .num {letter-spacing:-0.02em;}
+        main .container .right {
+            width:60%;
+            display:flex; flex-flow:column nowrap;
+            align-items:center;
+        }
+        main .container .right #map {/* 지도삽입위치 */
+            width:100%; height:550px;
+            border:1px solid #7e7e7e;
+        }
+        main .container .right .txt {
+            display:flex; flex-flow:column nowrap;
+            align-items:center;
+        }
+        main .container .right .txt p {letter-spacing:-0.02em; margin-top:10px;}
+        main .container .right .txt .s_title {
+            font-size:1.333rem; letter-spacing:-0.02em;
+            font-weight:500; margin:20px 0 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <?php include('./header.php') ?>
+    <!-- main -->
+    <main>
+        <div class="title">
+            <h1>FIND STORE</h1>
+        </div>
+        <div class="container">
+            <div class="left">
+                <h2>매장찾기</h2>
+                <div class="map_tit">
+                    <a id="address1" href="./map_1.html">
+                        <p class="title">강남점(VANS BRAND SHOWCASE)</p>
+                        <p class="address">서울특별시 강남구 강남대로 458 </p>
+                        <p class="num">02-6954-2299</p>
+                    </a>
+                    <a id="address2" href="./map_2.html">
+                        <p class="title">스타필드 코엑스점</p>
+                        <p class="address">서울특별시 강남구 영동대로 513 스타필드 코엑스몰 G106-1</p>
+                        <p class="num">02-6002-6056</p>
+                    </a>
+                    <a id="address3" href="map_3.html">
+                        <p class="title">롯데 강남점</p>
+                        <p class="address">서울특별시 강남구 롯데백화점 강남점 본관 7층</p>
+                        <p class="num">02-531-2257</p>
+                    </a>
+                </div>
+            </div>
+            <div class="right">
+                <div id="map"><!-- 지도삽입위치 --></div>
+                <div class="txt">
+                    <p class="s_title">강남점(VANS BRAND SHOWCASE)</p>
+                    <p>서울특별시 강남구 강남대로 458</p>
+                    <p>02-6954-2299</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <?php include('./footer.php') ?>
+
+    <!-- script -->
+    <script src="./script/common.js"></script>
+    <!-- 카카오 지도를 사용하기 위한 js 앱키 준비 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=08969d90b49be625752b4656c5fa18c3"></script>
+    <script>
+        var markerPosition  = new kakao.maps.LatLng(37.50315631,127.02574558);
+        const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        let options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(37.50315631,127.02574558), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+        let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+        marker.setMap(map);
+    </script>
+</body>
+</html>

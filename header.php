@@ -19,13 +19,13 @@
             <h1><a href="./index.html"><img src="./images/logo.png" alt=""></a></h1>
             <nav>
                 <ul>
-                    <li><a href="#" id="new">NEW</a>
+                    <li><a href="./product_list_new.html" id="new">NEW</a>
                         <div class="sub_bg new_sub">
                             <div class="sub">
                                 <div class="s_left">
                                     <dl>
-                                        <dt><a href="#">NEW</a></dt>
-                                        <dd><a href="#">NEW</a></dd>
+                                        <dt><a href="./product_list_new.html">NEW</a></dt>
+                                        <dd><a href="./product_list_new.html">NEW</a></dd>
                                         <dd><a href="#">신발 신상품</a></dd>
                                         <dd><a href="#">의류 신상품</a></dd>
                                         <dd><a href="#">악세서리 신상품</a></dd>
@@ -56,7 +56,7 @@
                             </div>
                         </div>    
                     </li>
-                    <li><a href="#" id="men">MEN</a>
+                    <li><a href="./product_list_man.html" id="men">MEN</a>
                         <div class="sub_bg men_sub">
                             <div class="sub">
                                 <div class="s_left">
@@ -106,7 +106,7 @@
                             </div>
                         </div> 
                     </li>
-                    <li><a href="#" id="women">WOMEN</a>
+                    <li><a href="./product_list_women.html" id="women">WOMEN</a>
                         <div class="sub_bg women_sub">
                             <div class="sub">
                                 <div class="s_left">
@@ -197,9 +197,7 @@
                             </div>
                         </div> 
                     </li>
-                    <li><a href="#" id="vault">VAULT</a>
-                        <div class="sub_bg none_sub"></div>
-                    </li>
+                    <li><a href="#" id="vault">VAULT</a></li>
                     <li><a href="#" id="customs">CUSTOMS</a>
                         <div class="sub_bg customs_sub">
                             <div class="sub">
@@ -231,12 +229,8 @@
                             </div>
                         </div> 
                     </li>
-                    <li><a href="#" id="skateboarding">SKATEBOARDING</a>
-                        <div class="sub_bg none_sub"></div>
-                    </li>
-                    <li><a href="#" id="sale">SALE</a>
-                        <div class="sub_bg none_sub"></div>
-                    </li>
+                    <li><a href="#" id="skateboarding">SKATEBOARDING</a></li>
+                    <li><a href="#" id="sale">SALE</a></li>
                     <li><a href="#" id="more">MORE</a>
                         <div class="sub_bg more_sub">
                             <div class="sub">
@@ -272,7 +266,7 @@
                 <span></span>
                 <span></span>
             </a>
-            <a href="#" class="m_search"><img src="./images/icon/m_search.png" alt="m_검색"></a>
+            <a href="#" class="m_search"><img src="./images/icon/m_search.png" alt="m_search"></a>
             <form action="#" method="get" id="search_frm">
                 <fieldset>
                     <legend class="skip">검색양식</legend>
@@ -287,11 +281,11 @@
         <!-- t,m open_nav -->
         <div class="open_nav">
             <ul>
-                <li><a href="#" id="new">NEW</a>
+                <li><a href="./product_list_new.html" id="new">NEW</a>
                     <div class="open_sub">
                         <dl>
-                            <dt><a href="#">NEW</a></dt>
-                            <dd><a href="#">NEW</a></dd>
+                            <dt><a href="./product_list_new.html">NEW</a></dt>
+                            <dd><a href="./product_list_new.html">NEW</a></dd>
                             <dd><a href="#">신발 신상품</a></dd>
                             <dd><a href="#">의류 신상품</a></dd>
                             <dd><a href="#">악세서리 신상품</a></dd>
@@ -312,11 +306,11 @@
                         </dl>
                     </div>  
                 </li>
-                <li><a href="#" id="men">MEN</a>
+                <li><a href="./product_list_men.html" id="men">MEN</a>
                     <div class="open_sub">
                         <dl>
-                            <dt><a href="#">신발</a></dt>
-                            <dd><a href="#">전체보기</a></dd>
+                            <dt><a href="./product_list_men.html">신발</a></dt>
+                            <dd><a href="./product_list_men.html">전체보기</a></dd>
                             <dd><a href="#">코어클래식</a></dd>
                             <dd><a href="#">클래식</a></dd>
                             <dd><a href="#">스케이트 슈즈</a></dd>
@@ -350,11 +344,11 @@
                         </dl>
                     </div>
                 </li>
-                <li><a href="#" id="women">WOMEN</a>
+                <li><a href="./product_list_women.html" id="women">WOMEN</a>
                     <div class="open_sub">
                         <dl>
-                            <dt><a href="#">신발</a></dt>
-                            <dd><a href="#">전체보기</a></dd>
+                            <dt><a href="./product_list_women.html">신발</a></dt>
+                            <dd><a href="./product_list_women.html">전체보기</a></dd>
                             <dd><a href="#">코어클래식</a></dd>
                             <dd><a href="#">클래식</a></dd>
                             <dd><a href="#">스케이트 슈즈</a></dd>
@@ -417,9 +411,7 @@
                         </dl>
                     </div>
                 </li>
-                <li><a href="#" id="vault">VAULT</a>
-                    <div class="open_sub"></div>
-                </li>
+                <li><a href="#" id="vault">VAULT</a></li>
                 <li><a href="#" id="customs">CUSTOMS</a>
                     <div class="open_sub">
                         <dl>
@@ -439,12 +431,8 @@
                         </dl>
                     </div> 
                 </li>
-                <li><a href="#" id="skateboarding">SKATEBOARDING</a>
-                    <div class="open_sub"></div>
-                </li>
-                <li><a href="#" id="sale">SALE</a>
-                    <div class="open_sub_"></div>
-                </li>
+                <li><a href="#" id="skateboarding">SKATEBOARDING</a></li>
+                <li><a href="#" id="sale">SALE</a></li>
                 <li><a href="#" id="more">MORE</a>
                     <div class="open_sub">
                         <dl>
@@ -460,6 +448,13 @@
                     </div>
                 </li>
             </ul>
+            <a href="#" id="open_nav_close"><img src="./images/icon/close.png" alt=""></a>
+        </div>
+        <!-- t,m open_search -->
+        <div class="open_search">
+            <input type="text" id="open_search_txt" placeholder="검색어를 입력해주세요.">
+            <button type="submit" id="open_search_btn">SEARCH</button>
+            <a href="#" id="open_search_close"><img src="./images/icon/close.png" alt=""></a>
         </div>
     </div>
 </header>

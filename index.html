@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./style/responsive.css">
 </head>
 <body>
+    <!-- header -->
+    <!-- <?php include('./header.php') ?> -->
     <header>
         <div class="swiper" id="h_adver"> <!-- 부모한테 구분용 id주기 -->
             <div class="swiper-wrapper">
@@ -39,13 +41,13 @@
                 <h1><a href="./index.html"><img src="./images/logo.png" alt=""></a></h1>
                 <nav>
                     <ul>
-                        <li><a href="#" id="new">NEW</a>
+                        <li class="nav_sub"><a href="./product_list_new.html" id="new">NEW</a>
                             <div class="sub_bg new_sub">
                                 <div class="sub">
                                     <div class="s_left">
                                         <dl>
-                                            <dt><a href="#">NEW</a></dt>
-                                            <dd><a href="#">NEW</a></dd>
+                                            <dt><a href="./product_list_new.html">NEW</a></dt>
+                                            <dd><a href="./product_list_new.html">NEW</a></dd>
                                             <dd><a href="#">신발 신상품</a></dd>
                                             <dd><a href="#">의류 신상품</a></dd>
                                             <dd><a href="#">악세서리 신상품</a></dd>
@@ -76,7 +78,7 @@
                                 </div>
                             </div>    
                         </li>
-                        <li><a href="#" id="men">MEN</a>
+                        <li class="nav_sub"><a href="./product_list_man.html" id="men">MEN</a>
                             <div class="sub_bg men_sub">
                                 <div class="sub">
                                     <div class="s_left">
@@ -126,7 +128,7 @@
                                 </div>
                             </div> 
                         </li>
-                        <li><a href="#" id="women">WOMEN</a>
+                        <li class="nav_sub"><a href="./product_list_women.html" id="women">WOMEN</a>
                             <div class="sub_bg women_sub">
                                 <div class="sub">
                                     <div class="s_left">
@@ -177,7 +179,7 @@
                                 </div>
                             </div> 
                         </li>
-                        <li><a href="#" id="kids">KIDS</a>
+                        <li class="nav_sub"><a href="#" id="kids">KIDS</a>
                             <div class="sub_bg kids_sub">
                                 <div class="sub">
                                     <div class="s_left">
@@ -218,7 +220,7 @@
                             </div> 
                         </li>
                         <li><a href="#" id="vault">VAULT</a></li>
-                        <li><a href="#" id="customs">CUSTOMS</a>
+                        <li class="nav_sub"><a href="#" id="customs">CUSTOMS</a>
                             <div class="sub_bg customs_sub">
                                 <div class="sub">
                                     <div class="s_left">
@@ -251,7 +253,7 @@
                         </li>
                         <li><a href="#" id="skateboarding">SKATEBOARDING</a></li>
                         <li><a href="#" id="sale">SALE</a></li>
-                        <li><a href="#" id="more">MORE</a>
+                        <li class="nav_sub"><a href="#" id="more">MORE</a>
                             <div class="sub_bg more_sub">
                                 <div class="sub">
                                     <div class="s_left">
@@ -301,11 +303,11 @@
             <!-- t,m open_nav -->
             <div class="open_nav">
                 <ul>
-                    <li><a href="#" id="new">NEW</a>
+                    <li class="gnb"><a href="./product_list_new.html" id="new">NEW</a>
                         <div class="open_sub">
                             <dl>
-                                <dt><a href="#">NEW</a></dt>
-                                <dd><a href="#">NEW</a></dd>
+                                <dt><a href="./product_list_new.html">NEW</a></dt>
+                                <dd><a href="./product_list_new.html">NEW</a></dd>
                                 <dd><a href="#">신발 신상품</a></dd>
                                 <dd><a href="#">의류 신상품</a></dd>
                                 <dd><a href="#">악세서리 신상품</a></dd>
@@ -326,11 +328,11 @@
                             </dl>
                         </div>  
                     </li>
-                    <li><a href="#" id="men">MEN</a>
+                    <li class="gnb"><a href="./product_list_men.html" id="men">MEN</a>
                         <div class="open_sub">
                             <dl>
-                                <dt><a href="#">신발</a></dt>
-                                <dd><a href="#">전체보기</a></dd>
+                                <dt><a href="./product_list_men.html">신발</a></dt>
+                                <dd><a href="./product_list_men.html">전체보기</a></dd>
                                 <dd><a href="#">코어클래식</a></dd>
                                 <dd><a href="#">클래식</a></dd>
                                 <dd><a href="#">스케이트 슈즈</a></dd>
@@ -364,11 +366,11 @@
                             </dl>
                         </div>
                     </li>
-                    <li><a href="#" id="women">WOMEN</a>
+                    <li class="gnb"><a href="./product_list_women.html" id="women">WOMEN</a>
                         <div class="open_sub">
                             <dl>
-                                <dt><a href="#">신발</a></dt>
-                                <dd><a href="#">전체보기</a></dd>
+                                <dt><a href="./product_list_women.html">신발</a></dt>
+                                <dd><a href="./product_list_women.html">전체보기</a></dd>
                                 <dd><a href="#">코어클래식</a></dd>
                                 <dd><a href="#">클래식</a></dd>
                                 <dd><a href="#">스케이트 슈즈</a></dd>
@@ -403,7 +405,7 @@
                             </dl>
                         </div>
                     </li>
-                    <li><a href="#" id="kids">KIDS</a>
+                    <li class="gnb"><a href="#" id="kids">KIDS</a>
                         <div class="open_sub">
                             <dl>
                                 <dt><a href="#">신발</a></dt>
@@ -432,7 +434,7 @@
                         </div>
                     </li>
                     <li><a href="#" id="vault">VAULT</a></li>
-                    <li><a href="#" id="customs">CUSTOMS</a>
+                    <li class="gnb"><a href="#" id="customs">CUSTOMS</a>
                         <div class="open_sub">
                             <dl>
                                 <dt><a href="#">CUSTOMS</a></dt>
@@ -453,7 +455,7 @@
                     </li>
                     <li><a href="#" id="skateboarding">SKATEBOARDING</a></li>
                     <li><a href="#" id="sale">SALE</a></li>
-                    <li><a href="#" id="more">MORE</a>
+                    <li class="gnb"><a href="#" id="more">MORE</a>
                         <div class="open_sub">
                             <dl>
                                 <dt><a href="#">MORE FUN</a></dt>
@@ -468,17 +470,17 @@
                         </div>
                     </li>
                 </ul>
-                <a href="#" id="open_nav_close"><img src="./images/icon/close_3.png" alt=""></a>
+                <a href="#" id="open_nav_close"><img src="./images/icon/close.png" alt=""></a>
             </div>
             <!-- t,m open_search -->
             <div class="open_search">
                 <input type="text" id="open_search_txt" placeholder="검색어를 입력해주세요.">
                 <button type="submit" id="open_search_btn">SEARCH</button>
-                <a href="#" id="open_search_close"><img src="./images/icon/close_3.png" alt=""></a>
+                <a href="#" id="open_search_close"><img src="./images/icon/close.png" alt=""></a>
             </div>
         </div>
     </header>
-    <!-- <?php include('./header.php') ?> -->
+    <!-- main -->
     <main>
         <div class="swiper" id="main_adver"> <!-- 부모한테 구분용 id주기 -->
             <div class="swiper-wrapper">
@@ -580,48 +582,10 @@
             <p class="buy_btn"><a href="#">더 알아보기</a></p>
         </section>
     </main> 
-    <footer>
-        <div class="container">
-            <div class="f_top">
-                <div class="f_t_left">
-                    <dl>
-                        <dt>ABOUT</dt>
-                        <dd><a href="#">반스에 대하여</a></dd>
-                        <dd><a href="#">고객센터</a></dd>
-                    </dl>
-                    <dl>
-                        <dt>SHOPPING</dt>
-                        <dd><a href="#">회원가입</a></dd>
-                        <dd><a href="#">주문/배송 조회</a></dd>
-                    </dl>
-                    <dl>
-                        <dt>LEGAL</dt>
-                        <dd><a href="#">이용약관</a></dd>
-                        <dd><a href="#">개인정보처리방침</a></dd>
-                        <dd><a href="#">청소년 보호정책</a></dd>
-                    </dl>
-                </div>
-                <div class="f_t_right">
-                    <p class="title">FOLLOW VANS</p>
-                    <div class="con">
-                        <a href="#" id="faceBook"></a>
-                        <a href="#" id="instagram"></a>
-                        <a href="#" id="kokoa"></a>
-                        <a href="#" id="naver"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="f_btm">
-                <h1><a href="#"><img src="./images/logo2.png" alt=""></a></h1>
-                <address>
-                    <p>유한책임회사 브이에프코리아 | 대표 TZE CHOI THEODORE PANG | 등록번호 220-88-43561 | 통신판매업신고번호 2013-서울강남-02918호 <a href="#">사업자정보확인</a> <br>
-                        서울특별시 강남구 테헤란로 317 동훈타워 18층 | 개인정보 책임자 남미리내 | <a href="#">고객센터(평일 09:00 ~ 18:00) 1522-1882</a> | 이메일 <a href="#">Vanskr_online@vfc.com</a></p>
-                    <p>&copy;유한책임회사 브이에프코리아. All Rights Reserved. California Transparency in Supply Chain Act of 2010</p>
-                </address>
-            </div>
-        </div>
-    </footer>
-    <!-- <?php include('./footer.php') ?> -->
+    <!-- footer -->
+    <?php include('./footer.php') ?>
+
+    <!-- script -->
     <script src="./script/common.js"></script>
     <script src="./script/index.js"></script>
 </body>

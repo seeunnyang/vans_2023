@@ -119,17 +119,24 @@
             background:#fff; border:1px solid #7e7e7e;
             padding:10px 15px; margin:0 15px 5px 15px;
         }
+        main .container .contents > .c_right .size .size_con a:hover {
+            border:1.5px solid #ca1d31; color:#ca1d31;
+        }
         main .container .contents > .c_right .size .size_con a:nth-child(15),
         main .container .contents > .c_right .size .size_con a:nth-child(16) {
             background:#f1f2ed; color:#7e7e7e;
         }
+        main .container .contents > .c_right .size .size_con a:nth-child(15):hover,
+        main .container .contents > .c_right .size .size_con a:nth-child(16):hover {
+            background:#f1f2ed; color:#7e7e7e; border:1px solid #7e7e7e;
+        }
         main .container .contents > .c_right .quantity {}
         main .container .contents > .c_right .quantity .title {}
         main .container .contents > .c_right .quantity .qty_con {margin:0 0 50px 15px;}
-        main .container .contents > .c_right .quantity .qty_con .label {
+        main .container .contents > .c_right .quantity .qty_con #inptxt {
             width:50px; height:30px;
             margin-right:10px;
-            border:1px solid #7e7e7e;
+            border:1px solid #7e7e7e; padding-left:20px;
         }
         main .container .contents > .c_right .quantity .qty_con .btn {
             width:50px; height:30px; background:#fff;
@@ -148,9 +155,16 @@
         main .container .contents > .c_right .button #cart {
             color:#fff; background:#000;
         }
+        main .container .contents > .c_right .button #cart:hover {
+            background:#ca1d31;
+        }
         main .container .contents > .c_right .button #buy {
             border:1px solid #000;
             background:#f1f2ed;
+        }
+        main .container .contents > .c_right .button #buy:hover {
+            border:1px solid #ca1d31;
+            color:#ca1d31;
         }
         main .container .contents > .c_right .delivery {
             display:flex; align-items:center;
@@ -280,468 +294,9 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="swiper" id="h_adver"> <!-- 부모한테 구분용 id주기 -->
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="#">[신상품] 새로운 실루엣, 뉴슬립</a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">첫 구매 10% 쿠폰 증정</a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">3만원 이상 무료배송</a>
-                </div>
-            </div> <!-- end swiper-wrapper -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div><!-- end swiper adver -->
-        <div class="container">
-            <div class="h_left">
-                <h1><a href="./index.html"><img src="./images/logo.png" alt=""></a></h1>
-                <nav>
-                    <ul>
-                        <li><a href="#" id="new">NEW</a>
-                            <div class="sub_bg new_sub">
-                                <div class="sub">
-                                    <div class="s_left">
-                                        <dl>
-                                            <dt><a href="#">NEW</a></dt>
-                                            <dd><a href="#">NEW</a></dd>
-                                            <dd><a href="#">신발 신상품</a></dd>
-                                            <dd><a href="#">의류 신상품</a></dd>
-                                            <dd><a href="#">악세서리 신상품</a></dd>
-                                            <dd><a href="#">키즈 신상품</a></dd>
-                                        </dl>
-                                        <dl>
-                                            <dt><a href="#">COLLECTION</a></dt>
-                                            <dd><a href="#">오버트 CC 신제품</a></dd>
-                                            <dd><a href="#">Vans x Nick Michel</a></dd>
-                                            <dd><a href="#">Vans x Tagi</a></dd>
-                                            <dd><a href="#">새로운 실루엣, 뉴슬립</a></dd>
-                                            <dd><a href="#">빈티지 레트로 팩</a></dd>
-                                        </dl>
-                                        <dl>
-                                            <dt><a href="#">CUSTOMS</a></dt>
-                                            <dd><a href="#">PINK VIBE</a></dd>
-                                            <dd><a href="#">NEW SEACON, NEW SWATCH</a></dd>
-                                        </dl>
-                                    </div>
-                                    <div class="s_right">
-                                        <a href="#"><img src="./images/nav_01.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_02.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_03.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_04.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_05.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_06.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>    
-                        </li>
-                        <li><a href="#" id="men">MEN</a>
-                            <div class="sub_bg men_sub">
-                                <div class="sub">
-                                    <div class="s_left">
-                                        <dl>
-                                            <dt><a href="#">신발</a></dt>
-                                            <dd><a href="#">전체보기</a></dd>
-                                            <dd><a href="#">코어클래식</a></dd>
-                                            <dd><a href="#">클래식</a></dd>
-                                            <dd><a href="#">스케이트 슈즈</a></dd>
-                                            <dd><a href="#">클래식플러스</a></dd>
-                                            <dd><a href="#">서프</a></dd>
-                                        </dl>
-                                        <dl>
-                                            <dt><a href="#">의류</a></dt>
-                                            <dd><a href="#">전체보기</a></dd>
-                                            <dd><a href="#">탑 & 티셔츠</a></dd>
-                                            <dd><a href="#">플리스</a></dd>
-                                            <dd><a href="#">아우터</a></dd>
-                                            <dd><a href="#">하의</a></dd>
-                                        </dl>
-                                        <dl>
-                                            <dt><a href="#">악세서리</a></dt>
-                                            <dd><a href="#">전체보기</a></dd>
-                                            <dd><a href="#">모자</a></dd>
-                                            <dd><a href="#">가방</a></dd>
-                                            <dd><a href="#">양말</a></dd>
-                                            <dd><a href="#">기타</a></dd>
-                                        </dl>
-                                        <dl>
-                                            <dt><a href="#">WHAT'S HOT</a></dt>
-                                            <dd><a href="#">베스트 셀러</a></dd>
-                                            <dd><a href="#">뉴 스쿨 & 뉴 슬립</a></dd>
-                                            <dd><a href="#">울트라레인지</a></dd>
-                                            <dd><a href="#">뮬</a></dd>
-                                            <dd><a href="#">컴피쿠시</a></dd>
-                                            <dd><a href="#">온라인 단독</a></dd>
-                                        </dl>
-                                    </div>
-                                    <div class="s_right">
-                                        <a href="#"><img src="./images/nav_01.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_02.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_03.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_04.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_05.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_06.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div> 
-                        </li>
-                        <li><a href="#" id="women">WOMEN</a>
-                            <div class="sub_bg women_sub">
-                                <div class="sub">
-                                    <div class="s_left">
-                                        <dl>
-                                            <dt><a href="#">신발</a></dt>
-                                            <dd><a href="#">전체보기</a></dd>
-                                            <dd><a href="#">코어클래식</a></dd>
-                                            <dd><a href="#">클래식</a></dd>
-                                            <dd><a href="#">스케이트 슈즈</a></dd>
-                                            <dd><a href="#">클래식플러스</a></dd>
-                                            <dd><a href="#">서프</a></dd>
-                                        </dl>
-                                        <dl>
-                                            <dt><a href="#">의류</a></dt>
-                                            <dd><a href="#">전체보기</a></dd>
-                                            <dd><a href="#">탑 & 티셔츠</a></dd>
-                                            <dd><a href="#">플리스</a></dd>
-                                            <dd><a href="#">아우터</a></dd>
-                                            <dd><a href="#">하의</a></dd>
-                                            <dd><a href="#">원피스 & 스커트</a></dd>
-                                        </dl>
-                                        <dl>
-                                            <dt><a href="#">악세서리</a></dt>
-                                            <dd><a href="#">전체보기</a></dd>
-                                            <dd><a href="#">모자</a></dd>
-                                            <dd><a href="#">가방</a></dd>
-                                            <dd><a href="#">양말</a></dd>
-                                            <dd><a href="#">기타</a></dd>
-                                        </dl>
-                                        <dl>
-                                            <dt><a href="#">WHAT'S HOT</a></dt>
-                                            <dd><a href="#">베스트 셀러</a></dd>
-                                            <dd><a href="#">뉴 스쿨 & 뉴 슬립</a></dd>
-                                            <dd><a href="#">뮬</a></dd>
-                                            <dd><a href="#">플랫폼</a></dd>
-                                            <dd><a href="#">컴피쿠시</a></dd>
-                                            <dd><a href="#">온라인 단독</a></dd>
-                                        </dl>
-                                    </div>
-                                    <div class="s_right">
-                                        <a href="#"><img src="./images/nav_01.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_02.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_03.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_04.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_05.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_06.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div> 
-                        </li>
-                        <li><a href="#" id="kids">KIDS</a>
-                            <div class="sub_bg kids_sub">
-                                <div class="sub">
-                                    <div class="s_left">
-                                        <dl>
-                                            <dt><a href="#">신발</a></dt>
-                                            <dd><a href="#">전체보기</a></dd>
-                                            <dd><a href="#">토틀러</a></dd>
-                                            <dd><a href="#">키즈</a></dd>
-                                            <dd><a href="#">베스트 셀러</a></dd>
-                                        </dl>
-                                        <dl>
-                                            <dt><a href="#">의류</a></dt>
-                                            <dd><a href="#">전체보기</a></dd>
-                                            <dd><a href="#">보이즈 & 걸즈</a></dd>
-                                            <dd><a href="#">키즈</a></dd>
-                                        </dl>
-                                        <dl>
-                                            <dt><a href="#">악세서리</a></dt>
-                                            <dd><a href="#">전체보기</a></dd>
-                                            <dd><a href="#">모자</a></dd>
-                                            <dd><a href="#">양말</a></dd>
-                                        </dl>
-                                        <dl>
-                                            <dt><a href="#">CUSTOMS</a></dt>
-                                            <dd><a href="#">커스텀 하기</a></dd>
-                                            <dd><a href="#">강아지&고양이 패턴</a></dd>
-                                        </dl>
-                                    </div>
-                                    <div class="s_right">
-                                        <a href="#"><img src="./images/nav_01.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_02.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_03.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_04.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_05.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_06.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div> 
-                        </li>
-                        <li><a href="#" id="vault">VAULT</a></li>
-                        <li><a href="#" id="customs">CUSTOMS</a>
-                            <div class="sub_bg customs_sub">
-                                <div class="sub">
-                                    <div class="s_left">
-                                        <dl>
-                                            <dt><a href="#">CUSTOMS</a></dt>
-                                            <dd><a href="#">나만의 신발 만들기</a></dd>
-                                            <dd><a href="#">어센틱 커스텀</a></dd>
-                                            <dd><a href="#">슬립온 커스텀</a></dd>
-                                            <dd><a href="#">올드스쿨 커스텀</a></dd>
-                                            <dd><a href="#">에라 커스텀</a></dd>
-                                            <dd><a href="#">스케이트-하이 커스텀</a></dd>
-                                        </dl>
-                                        <dl>
-                                            <dt><a href="#">FEATUGED</a></dt>
-                                            <dd><a href="#">PINK VIBE</a></dd>
-                                            <dd><a href="#">NEW SEACON, NEW SWATCH</a></dd>
-                                            <dd><a href="#">키즈</a></dd>
-                                        </dl>
-                                    </div>
-                                    <div class="s_right">
-                                        <a href="#"><img src="./images/nav_01.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_02.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_03.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_04.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_05.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_06.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div> 
-                        </li>
-                        <li><a href="#" id="skateboarding">SKATEBOARDING</a></li>
-                        <li><a href="#" id="sale">SALE</a></li>
-                        <li><a href="#" id="more">MORE</a>
-                            <div class="sub_bg more_sub">
-                                <div class="sub">
-                                    <div class="s_left">
-                                        <dl>
-                                            <dt><a href="#">MORE FUN</a></dt>
-                                            <dd><a href="#">SURE</a></dd>
-                                            <dd><a href="#">SURETAINBILITY</a></dd>
-                                            <dd><a href="#">ABOUT VANS</a></dd>
-                                            <dd><a href="#">THIS IS OFF THE WALL</a></dd>
-                                        </dl>
-                                        <dl>
-                                            <dt><a href="#">FEATUGED</a></dt>
-                                        </dl>
-                                    </div>
-                                    <div class="s_right">
-                                        <a href="#"><img src="./images/nav_01.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_02.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_03.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_04.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_05.png" alt=""></a>
-                                        <a href="#"><img src="./images/nav_06.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div> 
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="h_right">
-                <a href="#" class="m_nav">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-                <a href="#" class="m_search"><img src="./images/icon/m_search.png" alt="m_search"></a>
-                <form action="#" method="get" id="search_frm">
-                    <fieldset>
-                        <legend class="skip">검색양식</legend>
-                        <input type="text" id="search_txt" placeholder="Search...">
-                        <button type="submit" id="search_btn"><img src="./images/icon/icon_search.png" alt=""></button>
-                    </fieldset>
-                </form>
-                <a href="#"><img src="./images/icon/icon_hart.png" alt="찜한상품"></a>
-                <a href="#"><img src="./images/icon/icon_cart.png" alt="장바구니"></a>
-                <a href="./login.html"><img src="./images/icon/icon_login.png" alt="로그인"></a>
-            </div>
-            <!-- t,m open_nav -->
-            <div class="open_nav">
-                <ul>
-                    <li><a href="#" id="new">NEW</a>
-                        <div class="open_sub">
-                            <dl>
-                                <dt><a href="#">NEW</a></dt>
-                                <dd><a href="#">NEW</a></dd>
-                                <dd><a href="#">신발 신상품</a></dd>
-                                <dd><a href="#">의류 신상품</a></dd>
-                                <dd><a href="#">악세서리 신상품</a></dd>
-                                <dd><a href="#">키즈 신상품</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">COLLECTION</a></dt>
-                                <dd><a href="#">오버트 CC 신제품</a></dd>
-                                <dd><a href="#">Vans x Nick Michel</a></dd>
-                                <dd><a href="#">Vans x Tagi</a></dd>
-                                <dd><a href="#">새로운 실루엣, 뉴슬립</a></dd>
-                                <dd><a href="#">빈티지 레트로 팩</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">CUSTOMS</a></dt>
-                                <dd><a href="#">PINK VIBE</a></dd>
-                                <dd><a href="#">NEW SEACON, NEW SWATCH</a></dd>
-                            </dl>
-                        </div>  
-                    </li>
-                    <li><a href="#" id="men">MEN</a>
-                        <div class="open_sub">
-                            <dl>
-                                <dt><a href="#">신발</a></dt>
-                                <dd><a href="#">전체보기</a></dd>
-                                <dd><a href="#">코어클래식</a></dd>
-                                <dd><a href="#">클래식</a></dd>
-                                <dd><a href="#">스케이트 슈즈</a></dd>
-                                <dd><a href="#">클래식플러스</a></dd>
-                                <dd><a href="#">서프</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">의류</a></dt>
-                                <dd><a href="#">전체보기</a></dd>
-                                <dd><a href="#">탑 & 티셔츠</a></dd>
-                                <dd><a href="#">플리스</a></dd>
-                                <dd><a href="#">아우터</a></dd>
-                                <dd><a href="#">하의</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">악세서리</a></dt>
-                                <dd><a href="#">전체보기</a></dd>
-                                <dd><a href="#">모자</a></dd>
-                                <dd><a href="#">가방</a></dd>
-                                <dd><a href="#">양말</a></dd>
-                                <dd><a href="#">기타</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">WHAT'S HOT</a></dt>
-                                <dd><a href="#">베스트 셀러</a></dd>
-                                <dd><a href="#">뉴 스쿨 & 뉴 슬립</a></dd>
-                                <dd><a href="#">울트라레인지</a></dd>
-                                <dd><a href="#">뮬</a></dd>
-                                <dd><a href="#">컴피쿠시</a></dd>
-                                <dd><a href="#">온라인 단독</a></dd>
-                            </dl>
-                        </div>
-                    </li>
-                    <li><a href="#" id="women">WOMEN</a>
-                        <div class="open_sub">
-                            <dl>
-                                <dt><a href="#">신발</a></dt>
-                                <dd><a href="#">전체보기</a></dd>
-                                <dd><a href="#">코어클래식</a></dd>
-                                <dd><a href="#">클래식</a></dd>
-                                <dd><a href="#">스케이트 슈즈</a></dd>
-                                <dd><a href="#">클래식플러스</a></dd>
-                                <dd><a href="#">서프</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">의류</a></dt>
-                                <dd><a href="#">전체보기</a></dd>
-                                <dd><a href="#">탑 & 티셔츠</a></dd>
-                                <dd><a href="#">플리스</a></dd>
-                                <dd><a href="#">아우터</a></dd>
-                                <dd><a href="#">하의</a></dd>
-                                <dd><a href="#">원피스 & 스커트</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">악세서리</a></dt>
-                                <dd><a href="#">전체보기</a></dd>
-                                <dd><a href="#">모자</a></dd>
-                                <dd><a href="#">가방</a></dd>
-                                <dd><a href="#">양말</a></dd>
-                                <dd><a href="#">기타</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">WHAT'S HOT</a></dt>
-                                <dd><a href="#">베스트 셀러</a></dd>
-                                <dd><a href="#">뉴 스쿨 & 뉴 슬립</a></dd>
-                                <dd><a href="#">뮬</a></dd>
-                                <dd><a href="#">플랫폼</a></dd>
-                                <dd><a href="#">컴피쿠시</a></dd>
-                                <dd><a href="#">온라인 단독</a></dd>
-                            </dl>
-                        </div>
-                    </li>
-                    <li><a href="#" id="kids">KIDS</a>
-                        <div class="open_sub">
-                            <dl>
-                                <dt><a href="#">신발</a></dt>
-                                <dd><a href="#">전체보기</a></dd>
-                                <dd><a href="#">토틀러</a></dd>
-                                <dd><a href="#">키즈</a></dd>
-                                <dd><a href="#">베스트 셀러</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">의류</a></dt>
-                                <dd><a href="#">전체보기</a></dd>
-                                <dd><a href="#">보이즈 & 걸즈</a></dd>
-                                <dd><a href="#">키즈</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">악세서리</a></dt>
-                                <dd><a href="#">전체보기</a></dd>
-                                <dd><a href="#">모자</a></dd>
-                                <dd><a href="#">양말</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">CUSTOMS</a></dt>
-                                <dd><a href="#">커스텀 하기</a></dd>
-                                <dd><a href="#">강아지&고양이 패턴</a></dd>
-                            </dl>
-                        </div>
-                    </li>
-                    <li><a href="#" id="vault">VAULT</a></li>
-                    <li><a href="#" id="customs">CUSTOMS</a>
-                        <div class="open_sub">
-                            <dl>
-                                <dt><a href="#">CUSTOMS</a></dt>
-                                <dd><a href="#">나만의 신발 만들기</a></dd>
-                                <dd><a href="#">어센틱 커스텀</a></dd>
-                                <dd><a href="#">슬립온 커스텀</a></dd>
-                                <dd><a href="#">올드스쿨 커스텀</a></dd>
-                                <dd><a href="#">에라 커스텀</a></dd>
-                                <dd><a href="#">스케이트-하이 커스텀</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">FEATUGED</a></dt>
-                                <dd><a href="#">PINK VIBE</a></dd>
-                                <dd><a href="#">NEW SEACON, NEW SWATCH</a></dd>
-                                <dd><a href="#">키즈</a></dd>
-                            </dl>
-                        </div> 
-                    </li>
-                    <li><a href="#" id="skateboarding">SKATEBOARDING</a></li>
-                    <li><a href="#" id="sale">SALE</a></li>
-                    <li><a href="#" id="more">MORE</a>
-                        <div class="open_sub">
-                            <dl>
-                                <dt><a href="#">MORE FUN</a></dt>
-                                <dd><a href="#">SURE</a></dd>
-                                <dd><a href="#">SURETAINBILITY</a></dd>
-                                <dd><a href="#">ABOUT VANS</a></dd>
-                                <dd><a href="#">THIS IS OFF THE WALL</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">FEATUGED</a></dt>
-                            </dl>
-                        </div>
-                    </li>
-                </ul>
-                <a href="#" id="open_nav_close"><img src="./images/icon/close_3.png" alt=""></a>
-            </div>
-            <!-- t,m open_search -->
-            <div class="open_search">
-                <input type="text" id="open_search_txt" placeholder="검색어를 입력해주세요.">
-                <button type="submit" id="open_search_btn">SEARCH</button>
-                <a href="#" id="open_search_close"><img src="./images/icon/close_3.png" alt=""></a>
-            </div>
-        </div>
-    </header>
-    <!-- <?php include('./header.php') ?> -->
-
+    <!-- header -->
+    <?php include('./header.php') ?>
+    <!-- main -->
     <main>
         <div class="container">
             <div class="mini_title">
@@ -816,7 +371,7 @@
                     <div class="quantity">
                         <h2 class="title">수량</h2>
                         <div class="qty_con">
-                            <input type="text" name="quantity" class="label">
+                            <input type="text" id="inptxt" value="1">
                             <button type="button" class="btn minus">-</button>
                             <button type="button" class="btn plus">+</button>
                         </div>
@@ -995,49 +550,10 @@
             </div>
         </div>
     </main>
+    <!-- footer -->
+    <?php include('./footer.php') ?>
 
-    <footer>
-        <div class="container">
-            <div class="f_top">
-                <div class="f_t_left">
-                    <dl>
-                        <dt>ABOUT</dt>
-                        <dd><a href="#">반스에 대하여</a></dd>
-                        <dd><a href="#">고객센터</a></dd>
-                    </dl>
-                    <dl>
-                        <dt>SHOPPING</dt>
-                        <dd><a href="#">회원가입</a></dd>
-                        <dd><a href="#">주문/배송 조회</a></dd>
-                    </dl>
-                    <dl>
-                        <dt>LEGAL</dt>
-                        <dd><a href="#">이용약관</a></dd>
-                        <dd><a href="#">개인정보처리방침</a></dd>
-                        <dd><a href="#">청소년 보호정책</a></dd>
-                    </dl>
-                </div>
-                <div class="f_t_right">
-                    <p class="title">FOLLOW VANS</p>
-                    <div class="con">
-                        <a href="#" id="faceBook"></a>
-                        <a href="#" id="instagram"></a>
-                        <a href="#" id="kokoa"></a>
-                        <a href="#" id="naver"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="f_btm">
-                <h1><a href="#"><img src="./images/logo2.png" alt=""></a></h1>
-                <address>
-                    <p>유한책임회사 브이에프코리아 | 대표 TZE CHOI THEODORE PANG | 등록번호 220-88-43561 | 통신판매업신고번호 2013-서울강남-02918호 <a href="#">사업자정보확인</a> <br>
-                        서울특별시 강남구 테헤란로 317 동훈타워 18층 | 개인정보 책임자 남미리내 | <a href="#">고객센터(평일 09:00 ~ 18:00) 1522-1882</a> | 이메일 <a href="#">Vanskr_online@vfc.com</a></p>
-                    <p>&copy;유한책임회사 브이에프코리아. All Rights Reserved. California Transparency in Supply Chain Act of 2010</p>
-                </address>
-            </div>
-        </div>
-    </footer>
-    <!-- <?php include('./footer.php') ?> -->
+    <!-- script -->
     <script src="./script/common.js"></script>
     <!-- 내부 스크립트 -->
     <script>
