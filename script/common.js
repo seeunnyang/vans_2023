@@ -16,6 +16,7 @@ const h_adver = new Swiper('#h_adver',{
     },
 })
 
+//----------------------------------------------------------
 //nav에 마우스 올렸을 때 해당 nav 나타내기
 //변수 생성
 const sub = document.querySelectorAll('ul > li > .sub_bg')
@@ -57,7 +58,9 @@ for(let i of sub){i.addEventListener('mouseout',function(){
 })} 
 
 
+
 console.log('---------------------')
+//----------------------------------------------------------
 //m_nav 클릭시 open_nav 나타나기
 //open_nav > li > a 클릭시 해당 open_sub 나타나기
 //close 클릭시 open_nev 숨기기
