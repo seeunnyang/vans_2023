@@ -194,12 +194,17 @@
         }
         main .container .info ul li .title h3 {
             font-size:1.333rem; letter-spacing:-0.02em; font-weight:500;
-            
         }
         main .container .info ul li .title img {}
-        main .container .info ul li .title #down {}
-        main .container .info ul li .title #up {
+        main .container .info ul li .title #down {
             position:absolute; right:0;
+            width:100%; text-align:end;
+            padding:20px 0;
+        }
+        main .container .info ul li .title #up {
+            position:absolute; right:0; 
+            width:100%; text-align:end;
+            padding:20px 0;
             display:none;
         }
         /* info .con 묶음 */
@@ -596,6 +601,7 @@
         const down = document.querySelectorAll('main .container .info ul li .title #down')
         const up = document.querySelectorAll('main .container .info ul li .title #up')
         const con = document.querySelectorAll('main .container .info ul li .con')
+        console.log('------------------------------')
         console.log(down, up, con)
 
         down.forEach(function(t,i,a){
@@ -616,19 +622,6 @@
                 up[i].style.display='none'
             })
         })
-
-        //----------------------------------------------
-        //+버튼 클릭시 label 숫자 1씩 올라가기
-        //-버튼 클릭시 label 숫자 1씩 내려가기
-        //변수생성
-        const plus = document.querySelector('main .container .contents > .c_right .quantity .qty_con .plus')
-        const minus = document.querySelector('main .container .contents > .c_right .quantity .qty_con .minus')
-        const inptxt = document.querySelector('main .container .contents > .c_right .quantity .qty_con #inptxt')
-        console.log('----------')
-        console.log(plus, minus, inptxt)
-        /* plus.addEventListener('click',function(){
-            // inptxt.innerHTML='value=+1'
-        }) */
     </script>
 </body>
 </html>
