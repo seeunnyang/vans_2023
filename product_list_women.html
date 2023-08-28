@@ -150,11 +150,11 @@
         main .container .contents .filters .price .p_con .check p:hover {color:#000;}
         /* contents .product_list */
         main .container .contents .product_list {
-            display:flex; flex-flow:row wrap; justify-content: space-between;
+            display:flex; flex-flow:row wrap; justify-content:flex-start;
             width:80%;
         }
         main .container .contents .product_list .item {
-            position:relative; margin-bottom:50px;
+            position:relative; margin:0 13px 50px 13px;
         }
         main .container .contents .product_list .item #img {}
         main .container .contents .product_list .item #img img {
@@ -259,23 +259,23 @@
                         <div class="p_con">
                             <div class="check">
                                 <input type="checkbox" name="checkbox" id="checkbox">
-                                <p id="p0">0 원 ~ 50,000원</p>
+                                <p class="p_price">0 원 ~ 50,000원</p>
                             </div>
                             <div class="check">
                                 <input type="checkbox" name="checkbox" id="checkbox">
-                                <p id="p5">50,000 원 ~ 80,000원</p>
+                                <p class="p_price">50,000 원 ~ 80,000원</p>
                             </div>
                             <div class="check">
                                 <input type="checkbox" name="checkbox" id="checkbox">
-                                <p id="p8">80,000 원 ~ 100,000원</p>
+                                <p class="p_price">80,000 원 ~ 100,000원</p>
                             </div>
                             <div class="check">
                                 <input type="checkbox" name="checkbox" id="checkbox">
-                                <p id="p10">100,000 원 ~ 150,000원</p>
+                                <p class="p_price">100,000 원 ~ 150,000원</p>
                             </div>
                             <div class="check">
                                 <input type="checkbox" name="checkbox" id="checkbox">
-                                <p id="p15">150,000 원 ~ 300,000원</p>
+                                <p class="p_price">150,000 원 ~ 300,000원</p>
                             </div>
                         </div>
                     </div>
@@ -360,7 +360,7 @@
                         </a>
                         <div class="txt">
                             <p class="new">NEW ARRIVAL</p>
-                            <a href="#"><p class="iten_name">Vans x Beatrice Domond 반스 스케이트 쟈키 햇</p></a>
+                            <a href="#"><p class="iten_name">Vans x Beatrice Domond 반스 스케이트 햇</p></a>
                             <p class="item_price">35,000 원</p>
                         </div>
                         <a href="#" id="hart"><img src="./images/product/hart.png" alt=""></a>
@@ -443,9 +443,10 @@
         const filters = document.querySelector('main .container .contents .filters')//필터
         const list = document.querySelector('main .container .contents .product_list')//아이템리스트
         const item_img = document.querySelectorAll('main .container .contents .product_list .item #img img')//아이템이미지
+        const item =document.querySelectorAll('main .container .contents .product_list .item')//아이템 개별
 
         console.log('-------------')
-        console.log(f_hide, f_show, filters, list, item_img)
+        console.log(f_hide, f_show, filters, list, item_img,item)
 
         //초기 필터보이기 숨기기
         f_show.style.display='none'
@@ -459,6 +460,8 @@
             f_hide.style.opacity='0'
             f_show.style.display='flex'
             filters.style.display='none'
+            list.style.width=('100%')
+            for(let i of item){i.style.margin='0 16px 50px 16px'}
         })
         //필터 보이기 클릭시
         //원상복구
@@ -467,6 +470,20 @@
             f_show.style.display='none'
             f_hide.style.opacity='1'
             filters.style.display='block'
+            list.style.width=('80%')
+            for(let i of item){i.style.margin='0 13px 50px 13px'}
+        })
+
+        //가격 숫자 눌렀을 때 checkbox 체크 되게 만들기
+        //변수생성
+        const check = document.querySelectorAll('main .container .contents .filters .price .p_con .check #checkbox')
+        const p_price = document.querySelectorAll('main .container .contents .filters .price .p_con .check .p_price')
+        console.log('-------------')
+        console.log(check, p_price)
+        p_price.forEach(function(t,i,a){
+            t.addEventListener('click',function(){
+                console.log('-------')
+            })
         })
     </script>
 </body>

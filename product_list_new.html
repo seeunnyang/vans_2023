@@ -51,7 +51,7 @@
             letter-spacing:-0.02em;
         }
         main .container > .title .con .right {
-            display:flex;
+            display:flex; position:relative;
         }
         main .container > .title .con .right .filter {
             display:flex; align-items:center;
@@ -76,7 +76,7 @@
         main .container .contents {display:flex;}
         /* contents .filters */
         main .container .contents .filters { 
-            width:20%; height:900px;
+            width:20%; height:800px;
             background:#fff;
             padding:10px; margin-right:30px;
         }
@@ -150,11 +150,11 @@
         main .container .contents .filters .price .p_con .check p:hover {color:#000;}
         /* contents .product_list */
         main .container .contents .product_list {
-            display:flex; flex-flow:row wrap; justify-content: space-between;
+            display:flex; flex-flow:row wrap; justify-content:flex-start;
             width:80%;
         }
         main .container .contents .product_list .item {
-            position:relative; margin-bottom:50px;
+            position:relative; margin:0 13px 50px 13px;
         }
         main .container .contents .product_list .item #img {}
         main .container .contents .product_list .item #img img {
@@ -186,11 +186,6 @@
             position:absolute; top:10px; right:10px;
         }
         main .container .contents .product_list .item #hart img {}
-
-        /* @media screen and (max-width:1160px) {
-            main .container {width:calc(100% - 30px); margin:0 auto;} 
-            main .container .contents .filters {display:none;}
-        } */
     </style>
 </head>
 <body>
@@ -271,23 +266,23 @@
                         <div class="p_con">
                             <div class="check">
                                 <input type="checkbox" name="checkbox" id="checkbox">
-                                <p id="p0">0 원 ~ 50,000원</p>
+                                <p class="p_price">0 원 ~ 50,000원</p>
                             </div>
                             <div class="check">
                                 <input type="checkbox" name="checkbox" id="checkbox">
-                                <p id="p5">50,000 원 ~ 80,000원</p>
+                                <p class="p_price">50,000 원 ~ 80,000원</p>
                             </div>
                             <div class="check">
                                 <input type="checkbox" name="checkbox" id="checkbox">
-                                <p id="p8">80,000 원 ~ 100,000원</p>
+                                <p class="p_price">80,000 원 ~ 100,000원</p>
                             </div>
                             <div class="check">
                                 <input type="checkbox" name="checkbox" id="checkbox">
-                                <p id="p10">100,000 원 ~ 150,000원</p>
+                                <p class="p_price">100,000 원 ~ 150,000원</p>
                             </div>
                             <div class="check">
                                 <input type="checkbox" name="checkbox" id="checkbox">
-                                <p id="p15">150,000 원 ~ 300,000원</p>
+                                <p class="p_price">150,000 원 ~ 300,000원</p>
                             </div>
                         </div>
                     </div>
@@ -446,5 +441,45 @@
 
     <!-- script -->
     <script src="./script/common.js"></script>
+    <script>
+        //필터숨기기 클릭 시 필터 위로 아이템들 덮기
+        //아이템들 크기 조정하기
+        //변수생성
+        const f_hide = document.querySelector('main .container > .title .con .right .f_hide')//필터 숨기기
+        const f_show = document.querySelector('main .container > .title .con .right .f_show')//필터 보이기
+        const filters = document.querySelector('main .container .contents .filters')//필터
+        const list = document.querySelector('main .container .contents .product_list')//아이템리스트
+        const item_img = document.querySelectorAll('main .container .contents .product_list .item #img img')//아이템이미지
+        const item =document.querySelectorAll('main .container .contents .product_list .item')//아이템 개별
+
+        console.log('-------------')
+        console.log(f_hide, f_show, filters, list, item_img,item)
+
+        //초기 필터보이기 숨기기
+        f_show.style.display='none'
+
+        //필터 숨기기 클릭 시 
+        //1. 필터숨기기 없애고, 필터보이기 나타내기
+        //2. 필터 없애기
+        //3. 리스트 크기 변경하기
+        f_hide.addEventListener('click',function(e){
+            e.preventDefault
+            f_hide.style.opacity='0'
+            f_show.style.display='flex'
+            filters.style.display='none'
+            list.style.width=('100%')
+            for(let i of item){i.style.margin='0 16px 50px 16px'}
+        })
+        //필터 보이기 클릭시
+        //원상복구
+        f_show.addEventListener('click',function(e){
+            e.preventDefault
+            f_show.style.display='none'
+            f_hide.style.opacity='1'
+            filters.style.display='block'
+            list.style.width=('80%')
+            for(let i of item){i.style.margin='0 13px 50px 13px'}
+        })
+    </script>
 </body>
 </html>
