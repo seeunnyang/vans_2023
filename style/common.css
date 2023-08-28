@@ -106,7 +106,7 @@ header .container .h_right #search_frm fieldset {
 }
 header .container .h_right #search_frm fieldset #search_txt {letter-spacing:-0.02em;}
 header .container .h_right #search_frm fieldset #search_btn {}
-header .container .h_right #search_frm fieldset #search_btn img {}
+header .container .h_right #search_frm fieldset #search_btn img {background:#fff;}
 header .container .h_right a {margin-left:10px;}
 header .container .h_right a img {}
 /* open nav */
