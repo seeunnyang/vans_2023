@@ -51,40 +51,32 @@ const m_nav = document.querySelector('header .container .h_right .m_nav') //mav�
 const open_nav = document.querySelector('header .container .open_nav')//open_nav
 const aTag = document.querySelectorAll('header .container .open_nav ul .gnb')//open_nav>li>
 const open_sub = document.querySelectorAll('header .container .open_nav ul li .open_sub')//open_nav > open_sub
-const open_nav_close = document.querySelector('header .container .open_nav #open_nav_close')
-const open_search = document.querySelector('header .container .open_search')
-const m_search = document.querySelector('header .container .h_right .m_search') //검색아이콘
-const open_search_close =document.querySelector('header .container .open_search #open_search_close')//검색닫기
+const open_search = document.querySelector('header .container .open_search')//m검색
+const m_search = document.querySelector('header .container .h_right .m_search') //m검색아이콘
 console.log(m_nav, open_nav,aTag, open_sub)
-console.log(m_search, open_search, open_search_close)
+console.log(m_search, open_search)
 
 //m_search 클릭시 open_search 나타나기
+//다시 클릭시 open_search 숨기기
 m_search.addEventListener('click',function(e){
     e.preventDefault()
-    open_search.style.display='flex'
-})
-//open_search_close 클릭시 open_search 숨기기
-open_search_close.addEventListener('click',function(e){
-    e.preventDefault()
-    open_search.style.display='none'
+    open_search.classList.toggle('active')
 })
 
 //m_nav 클릭시 open_nav 나타나기
+//다시 클릭시 open_nav 숨기기
 m_nav.addEventListener('click',function(e){
     e.preventDefault()
-    open_nav.style.display='block'
+    open_nav.classList.toggle('active')
 })
-//open_nav_close 클릭시 open_nev 숨기기
-open_nav_close.addEventListener('click',function(e){
-    e.preventDefault()
-    open_nav.style.display='none'
-})
+
+
 //open_nav > li > a 클릭시 해당 open_sub 나타나기
+//다시 클릭 시 해당 open_sub 숨기기
 aTag.forEach(function(t,i,a){
     t.addEventListener('click',function(e){
         e.preventDefault()
-        for(let j of open_sub){j.style.display='none'}
-        open_sub[i].style.display='block'
+        open_sub[i].classList.toggle('active')
     })
 })
 

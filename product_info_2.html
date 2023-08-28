@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/responsive.css">
     <style>
-        main {background:#f1f2ed; width:100%; margin:0 auto;}
+        main {
+            background:#f1f2ed; width:100%; margin:0 auto;
+            min-width:1440px;
+        }
         main .container {
             width:calc(100% - 240px); margin:0 auto;
             padding:50px;
@@ -111,7 +114,7 @@
         main .container .contents > .c_right .size {}
         main .container .contents > .c_right .size .title {}
         main .container .contents > .c_right .size .size_con {
-            display:flex; flex-flow:row wrap; justify-content:space-between;
+            display:flex; flex-flow:row wrap; justify-content:start;
             margin-bottom:50px;
         }
         main .container .contents > .c_right .size .size_con a {
