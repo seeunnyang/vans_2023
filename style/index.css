@@ -97,6 +97,7 @@ main .banner_2 .con .txt h2 {
 main .banner_2 .con .txt p {
     font-size:1.333rem; letter-spacing:-0.02em;
     margin-bottom:30px;
+    line-height:30px;
 }
 main .banner_2 .con .buy_btn {}
 main .banner_2 .con .buy_btn a {
