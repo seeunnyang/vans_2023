@@ -1,4 +1,5 @@
 /* header,footer */
+/* * {min-width: 400px;} */
 header {z-index: 999;}
 /* header slide */
 header #h_adver {
@@ -188,7 +189,7 @@ footer .container {
     padding:50px 0;
 }
 footer .container .f_top {
-    display:flex; justify-content: space-between;
+    display:flex; justify-content:space-between;
 }
 footer .container .f_top .f_t_left {
     display:flex; margin-bottom:60px;
@@ -202,8 +203,7 @@ footer .container .f_top .f_t_left dl dt {
 footer .container .f_top .f_t_left dl dd {margin-bottom:10px;}
 footer .container .f_top .f_t_left dl dd:last-child {margin-bottom:0;}
 footer .container .f_top .f_t_left dl dd a {
-    letter-spacing:-0.02em;
-    color:#7e7e7e;
+    letter-spacing:-0.02em; color:#7e7e7e;
 }
 footer .container .f_top .f_t_left dl dd a:hover {color:#CA1D31;}
 footer .container .f_top .f_t_right {}
@@ -244,9 +244,7 @@ footer .container .f_top .f_t_right .con #naver {
 footer .container .f_top .f_t_right .con #naver:hover {
     background:url(../images/icon/icon_naver_2.png);
 }
-footer .container .f_btm {
-    display:flex;
-}
+footer .container .f_btm {display:flex;}
 footer .container .f_btm h1 {margin-right:60px;}
 footer .container .f_btm h1 a {}
 footer .container .f_btm h1 a img {}

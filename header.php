@@ -70,8 +70,8 @@
                                         <dd><a href="#">서프</a></dd>
                                     </dl>
                                     <dl>
-                                        <dt><a href="#">의류</a></dt>
-                                        <dd><a href="#">전체보기</a></dd>
+                                        <dt><a href="./product_list_man.html">의류</a></dt>
+                                        <dd><a href="./product_list_man.html">전체보기</a></dd>
                                         <dd><a href="#">탑 & 티셔츠</a></dd>
                                         <dd><a href="#">플리스</a></dd>
                                         <dd><a href="#">아우터</a></dd>
@@ -129,8 +129,8 @@
                                         <dd><a href="#">원피스 & 스커트</a></dd>
                                     </dl>
                                     <dl>
-                                        <dt><a href="#">악세서리</a></dt>
-                                        <dd><a href="#">전체보기</a></dd>
+                                        <dt><a href="./product_list_women.html">악세서리</a></dt>
+                                        <dd><a href="./product_list_women.html">전체보기</a></dd>
                                         <dd><a href="#">모자</a></dd>
                                         <dd><a href="#">가방</a></dd>
                                         <dd><a href="#">양말</a></dd>
@@ -212,7 +212,7 @@
                                         <dd><a href="#">스케이트-하이 커스텀</a></dd>
                                     </dl>
                                     <dl>
-                                        <dt><a href="#">FEATUGED</a></dt>
+                                        <dt><a href="#">FEATURED</a></dt>
                                         <dd><a href="#">PINK VIBE</a></dd>
                                         <dd><a href="#">NEW SEACON, NEW SWATCH</a></dd>
                                         <dd><a href="#">키즈</a></dd>
@@ -241,9 +241,6 @@
                                         <dd><a href="#">SURETAINBILITY</a></dd>
                                         <dd><a href="#">ABOUT VANS</a></dd>
                                         <dd><a href="#">THIS IS OFF THE WALL</a></dd>
-                                    </dl>
-                                    <dl>
-                                        <dt><a href="#">FEATUGED</a></dt>
                                     </dl>
                                 </div>
                                 <div class="s_right">
@@ -281,7 +278,7 @@
         <!-- t,m open_nav -->
         <div class="open_nav active">
             <ul>
-                <li class="gnb"><a href="#" id="new">NEW</a>
+                <li class="gnb"><a href="./product_list_new.html" id="new">NEW</a>
                     <div class="open_sub active">
                         <dl>
                             <dt><a href="./product_list_new.html">NEW</a></dt>
@@ -306,11 +303,11 @@
                         </dl>
                     </div>  
                 </li>
-                <li class="gnb"><a href="#" id="men">MEN</a>
+                <li class="gnb"><a href="./product_list_men.html" id="men">MEN</a>
                     <div class="open_sub active">
                         <dl>
-                            <dt><a href="./product_list_men.html">신발</a></dt>
-                            <dd><a href="./product_list_men.html">전체보기</a></dd>
+                            <dt><a href="#">신발</a></dt>
+                            <dd><a href="#">전체보기</a></dd>
                             <dd><a href="#">코어클래식</a></dd>
                             <dd><a href="#">클래식</a></dd>
                             <dd><a href="#">스케이트 슈즈</a></dd>
@@ -318,8 +315,8 @@
                             <dd><a href="#">서프</a></dd>
                         </dl>
                         <dl>
-                            <dt><a href="#">의류</a></dt>
-                            <dd><a href="#">전체보기</a></dd>
+                            <dt><a href="./product_list_men.html">의류</a></dt>
+                            <dd><a href="./product_list_men.html">전체보기</a></dd>
                             <dd><a href="#">탑 & 티셔츠</a></dd>
                             <dd><a href="#">플리스</a></dd>
                             <dd><a href="#">아우터</a></dd>
@@ -344,11 +341,11 @@
                         </dl>
                     </div>
                 </li>
-                <li class="gnb"><a href="#" id="women">WOMEN</a>
+                <li class="gnb"><a href="./product_list_women.html" id="women">WOMEN</a>
                     <div class="open_sub active">
                         <dl>
-                            <dt><a href="./product_list_women.html">신발</a></dt>
-                            <dd><a href="./product_list_women.html">전체보기</a></dd>
+                            <dt><a href="#">신발</a></dt>
+                            <dd><a href="#">전체보기</a></dd>
                             <dd><a href="#">코어클래식</a></dd>
                             <dd><a href="#">클래식</a></dd>
                             <dd><a href="#">스케이트 슈즈</a></dd>
@@ -365,8 +362,8 @@
                             <dd><a href="#">원피스 & 스커트</a></dd>
                         </dl>
                         <dl>
-                            <dt><a href="#">악세서리</a></dt>
-                            <dd><a href="#">전체보기</a></dd>
+                            <dt><a href="./product_list_women.html">악세서리</a></dt>
+                            <dd><a href="./product_list_women.html">전체보기</a></dd>
                             <dd><a href="#">모자</a></dd>
                             <dd><a href="#">가방</a></dd>
                             <dd><a href="#">양말</a></dd>
@@ -424,7 +421,7 @@
                             <dd><a href="#">스케이트-하이 커스텀</a></dd>
                         </dl>
                         <dl>
-                            <dt><a href="#">FEATUGED</a></dt>
+                            <dt><a href="#">FEATURED</a></dt>
                             <dd><a href="#">PINK VIBE</a></dd>
                             <dd><a href="#">NEW SEACON, NEW SWATCH</a></dd>
                             <dd><a href="#">키즈</a></dd>
@@ -441,9 +438,6 @@
                             <dd><a href="#">SURETAINBILITY</a></dd>
                             <dd><a href="#">ABOUT VANS</a></dd>
                             <dd><a href="#">THIS IS OFF THE WALL</a></dd>
-                        </dl>
-                        <dl>
-                            <dt><a href="#">FEATUGED</a></dt>
                         </dl>
                     </div>
                 </li>

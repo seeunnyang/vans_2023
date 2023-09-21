@@ -1,11 +1,27 @@
 /* Tablet, Mobile */
+@media screen and (max-width:1500px){
+    /* header */
+    header .container {
+        width:calc(100% - 120px); margin: 0 auto;
+    }
+    header .container .h_right #search_frm {display:none;} /* #search_frm 숨기기 */
+    header .container .h_right .m_search {
+        margin-left:10px;
+        display:block;
+    }
+
+    /* footer */
+    footer .container {
+        width:calc(100% - 120px); margin:0 auto;
+    }
+}
+
 /* Tablet */
 @media screen and (max-width:1160px) {/* 1160px 이하를 처리하겠다 */
     /* 1160px 이하일 경우 15px 여백적용 */
     header .container {width: calc(100% - 30px); margin:0 auto;}
     main {width: calc(100% - 30px); margin:0 auto;} /* header이랑 똑같이 1160px이하일때 좌우여백처리 */
-    header .container .h_left nav,
-    header .container .h_right #search_frm {display:none;} /* nav,#search_frm 숨기기 */
+    header .container .h_left nav {display:none;} /* nav 숨기기 */
     header .container .h_right .m_nav {
         display:flex; flex-flow:column nowrap;
         justify-content:space-between;
@@ -16,56 +32,39 @@
         width:100%; height:3px;  display:block;
         border-radius:50px; background:#000;
     }
-    header .container .h_right .m_search {
-        margin-left:10px;
-        display:block;
-    }
-    /* slide */
-    main #main_adver .swiper-wrapper .swiper-slide {
-        display:flex; justify-content: center;
-    }
-    main #main_adver .swiper-wrapper .slide1 {
-        background:url(../images/main_1_slide_1_t.png) no-repeat center;
-        background-size:cover;
-    }
-    main #main_adver .swiper-wrapper .slide2 {
-        background:url(../images/main_1_slide_2_t.png) no-repeat center;
-        background-size:cover;
-    }
-    main #main_adver .swiper-wrapper .swiper-slide .con {
-        display:inline-block;
-        text-align:center; 
-        margin:100px 0 800px 0;
-    }
-    main #main_adver .swiper-wrapper .swiper-slide .con .txt {}
-    main #main_adver .swiper-wrapper .swiper-slide .con .txt h2 {
-        font-size:3.157rem; letter-spacing:-0.02em;
-        font-weight:700; margin-bottom:20px;
-    }
-    main #main_adver .swiper-wrapper .swiper-slide .con .txt p {
-        font-size:1.777rem; letter-spacing:-0.02em;
-        line-height:30px; margin-bottom:50px;
-    }
-    main #main_adver .swiper-wrapper .swiper-slide .con .buy_btn {}
-    main #main_adver .swiper-wrapper .swiper-slide .con .buy_btn a {
-        font-size:1.777rem; letter-spacing:-0.02em;
-        font-weight:700; color:#fff;
-        background:#000; display:inline-block;
-        padding:20px 80px;
-        transition: all 0.5s;
-    }
-    main #main_adver .swiper-wrapper .swiper-slide .con .buy_btn a:hover {background:#ca1d31;}
+    /* footer */
 }/* 1160 end */
 
 
 /* Mobile */
 @media screen and (max-width:900px) {
-    main #main_adver .swiper-wrapper .slide1 {
-        background:url(../images/main_1_slide_1_m.png) no-repeat center;
-        background-size:cover;
+    /* footer */
+    footer .container .f_top {
+        display:flex; flex-flow: column nowrap;
     }
-    main #main_adver .swiper-wrapper .slide2 {
-        background:url(../images/main_1_slide_2_m.png) no-repeat center;
-        background-size:cover;
+    footer .container .f_top .f_t_left {
+        display:flex; justify-content:center; margin-bottom:30px;
     }
+    footer .container .f_top .f_t_left dl dt {text-align: center; font-size: 1rem;}
+    footer .container .f_top .f_t_left dl dd {text-align: center;}
+    footer .container .f_top .f_t_left dl dd a {font-size:0.85rem;}
+    footer .container .f_top .f_t_right {display: none;}
+    footer .container .f_btm {
+        display:flex; flex-flow: column nowrap; align-items:center;
+    }
+    footer .container .f_btm h1 {margin-bottom:30px;}
 }/* 900 end */
+
+@media screen and (max-width:400px) {
+    /* header */
+    header .container {
+        /* width:calc(100% - 50px); margin: 0 auto; */
+    }
+    /* footer */
+    footer .container {
+        width:calc(100% - 50px); margin:0 auto;
+    }
+    footer .container .f_top {
+        display:none;
+    }
+}/* 400end */
